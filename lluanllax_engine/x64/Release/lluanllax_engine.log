@@ -1,0 +1,5 @@
+﻿  glad.c
+  Main.cpp
+C:\Users\lluanllo\source\repos\lluanllax_engine\Libraries\include\glad\glad.h(27,1): error C1189: #error:  OpenGL header already included, remove this include, glad already provides it
+  (compilando archivo de origen "Main.cpp")
+  
