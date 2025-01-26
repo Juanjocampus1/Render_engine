@@ -75,8 +75,8 @@
     </PublicIncludeDirectories>
     <PublicModuleDirectories>
     </PublicModuleDirectories>
-    <IncludePath>C:\Users\lluanllo\source\repos\lluanllax_engine\Libraries\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\lluanllo\source\repos\lluanllax_engine\Libraries\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\jjace\Desktop\dev\TFG\Render_engine\Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\jjace\Desktop\dev\TFG\Render_engine\Libraries\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <PublicIncludeDirectories>
@@ -91,8 +91,8 @@
     </PublicIncludeDirectories>
     <PublicModuleDirectories>
     </PublicModuleDirectories>
-    <IncludePath>C:\Users\lluanllo\source\repos\lluanllax_engine\Libraries\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\lluanllo\source\repos\lluanllax_engine\Libraries\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\jjace\Desktop\dev\TFG\Render_engine\Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\jjace\Desktop\dev\TFG\Render_engine\Libraries\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <PublicIncludeDirectories>
@@ -167,6 +167,7 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Source\EBO.cpp" />
     <ClCompile Include="Source\ShaderClass.cpp" />
+    <ClCompile Include="stb.cpp" />
     <ClCompile Include="Source\VAO.cpp" />
     <ClCompile Include="Source\VBO.cpp" />
   </ItemGroup>
