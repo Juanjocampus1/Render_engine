@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\jjace\\Desktop\\dev\\TFG\\Render_engine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|C:\\Users\\jjace\\Desktop\\dev\\TFG\\Render_engine\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|C:\\Users\\jjace\\Desktop\\dev\\TFG\\Render_engine\\src\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|C:\\Users\\jjace\\Desktop\\dev\\TFG\\Render_engine\\src\\Source\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Source\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|C:\\Users\\jjace\\Desktop\\dev\\TFG\\Render_engine\\src\\Header_Files\\Texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Header_Files\\Texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|C:\\Users\\jjace\\Desktop\\dev\\TFG\\Render_engine\\Shaders\\FragmentShader.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:Shaders\\FragmentShader.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|C:\\Users\\jjace\\Desktop\\dev\\TFG\\Render_engine\\Shaders\\VertexShader.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:Shaders\\VertexShader.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 317,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Texture.cpp",
+              "DocumentMoniker": "C:\\Users\\jjace\\Desktop\\dev\\TFG\\Render_engine\\src\\Source\\Texture.cpp",
+              "RelativeDocumentMoniker": "src\\Source\\Texture.cpp",
+              "ToolTip": "C:\\Users\\jjace\\Desktop\\dev\\TFG\\Render_engine\\src\\Source\\Texture.cpp*",
+              "RelativeToolTip": "src\\Source\\Texture.cpp*",
+              "ViewState": "AgIAACwAAAAAAAAAAAAcwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-27T21:57:48.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Texture.h",
+              "DocumentMoniker": "C:\\Users\\jjace\\Desktop\\dev\\TFG\\Render_engine\\src\\Header_Files\\Texture.h",
+              "RelativeDocumentMoniker": "src\\Header_Files\\Texture.h",
+              "ToolTip": "C:\\Users\\jjace\\Desktop\\dev\\TFG\\Render_engine\\src\\Header_Files\\Texture.h",
+              "RelativeToolTip": "src\\Header_Files\\Texture.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-27T21:53:38.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FragmentShader.glsl",
+              "DocumentMoniker": "C:\\Users\\jjace\\Desktop\\dev\\TFG\\Render_engine\\Shaders\\FragmentShader.glsl",
+              "RelativeDocumentMoniker": "Shaders\\FragmentShader.glsl",
+              "ToolTip": "C:\\Users\\jjace\\Desktop\\dev\\TFG\\Render_engine\\Shaders\\FragmentShader.glsl",
+              "RelativeToolTip": "Shaders\\FragmentShader.glsl",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-27T21:30:17.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VertexShader.glsl",
+              "DocumentMoniker": "C:\\Users\\jjace\\Desktop\\dev\\TFG\\Render_engine\\Shaders\\VertexShader.glsl",
+              "RelativeDocumentMoniker": "Shaders\\VertexShader.glsl",
+              "ToolTip": "C:\\Users\\jjace\\Desktop\\dev\\TFG\\Render_engine\\Shaders\\VertexShader.glsl",
+              "RelativeToolTip": "Shaders\\VertexShader.glsl",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-27T20:24:08.193Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Main.cpp",
-              "DocumentMoniker": "C:\\Users\\jjace\\Desktop\\dev\\TFG\\Render_engine\\Main.cpp",
-              "RelativeDocumentMoniker": "Main.cpp",
-              "ToolTip": "C:\\Users\\jjace\\Desktop\\dev\\TFG\\Render_engine\\Main.cpp*",
-              "RelativeToolTip": "Main.cpp*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\jjace\\Desktop\\dev\\TFG\\Render_engine\\src\\Main.cpp",
+              "RelativeDocumentMoniker": "src\\Main.cpp",
+              "ToolTip": "C:\\Users\\jjace\\Desktop\\dev\\TFG\\Render_engine\\src\\Main.cpp",
+              "RelativeToolTip": "src\\Main.cpp",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAAAFkAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-08T12:14:39.848Z",
               "EditorCaption": ""

@@ -164,22 +164,27 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Source\EBO.cpp" />
-    <ClCompile Include="Source\ShaderClass.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Source\EBO.cpp" />
+    <ClCompile Include="src\Source\ShaderClass.cpp" />
+    <ClCompile Include="src\Source\Texture.cpp" />
     <ClCompile Include="stb.cpp" />
-    <ClCompile Include="Source\VAO.cpp" />
-    <ClCompile Include="Source\VBO.cpp" />
+    <ClCompile Include="src\Source\VAO.cpp" />
+    <ClCompile Include="src\Source\VBO.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Shaders\FragmentShader.glsl" />
     <None Include="Shaders\VertexShader.glsl" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header_Files\EBO.h" />
-    <ClInclude Include="Header_Files\ShaderClass.h" />
-    <ClInclude Include="Header_Files\VAO.h" />
-    <ClInclude Include="Header_Files\VBO.h" />
+    <ClInclude Include="src\Header_Files\EBO.h" />
+    <ClInclude Include="src\Header_Files\ShaderClass.h" />
+    <ClInclude Include="src\Header_Files\Texture.h" />
+    <ClInclude Include="src\Header_Files\VAO.h" />
+    <ClInclude Include="src\Header_Files\VBO.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\texture.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -18,22 +18,25 @@
     <ClCompile Include="glad.c">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Main.cpp">
+    <ClCompile Include="src\Main.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Source\ShaderClass.cpp">
+    <ClCompile Include="src\Source\ShaderClass.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Source\VBO.cpp">
+    <ClCompile Include="src\Source\VBO.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Source\EBO.cpp">
+    <ClCompile Include="src\Source\EBO.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Source\VAO.cpp">
+    <ClCompile Include="src\Source\VAO.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="stb.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\Texture.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
@@ -42,17 +45,25 @@
     <None Include="Shaders\VertexShader.glsl" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header_Files\ShaderClass.h">
+    <ClInclude Include="src\Header_Files\ShaderClass.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Header_Files\VBO.h">
+    <ClInclude Include="src\Header_Files\VBO.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Header_Files\EBO.h">
+    <ClInclude Include="src\Header_Files\EBO.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Header_Files\VAO.h">
+    <ClInclude Include="src\Header_Files\VAO.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="src\Header_Files\Texture.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\texture.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
   </ItemGroup>
 </Project>

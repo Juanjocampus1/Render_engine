@@ -1,7 +1,8 @@
 C:\Users\jjace\Desktop\dev\TFG\Render_engine\glad.c;C:\Users\jjace\Desktop\dev\TFG\Render_engine\lluanllax_engine\x64\Debug\glad.obj
-C:\Users\jjace\Desktop\dev\TFG\Render_engine\Main.cpp;C:\Users\jjace\Desktop\dev\TFG\Render_engine\lluanllax_engine\x64\Debug\Main.obj
-C:\Users\jjace\Desktop\dev\TFG\Render_engine\Source\EBO.cpp;C:\Users\jjace\Desktop\dev\TFG\Render_engine\lluanllax_engine\x64\Debug\EBO.obj
-C:\Users\jjace\Desktop\dev\TFG\Render_engine\Source\ShaderClass.cpp;C:\Users\jjace\Desktop\dev\TFG\Render_engine\lluanllax_engine\x64\Debug\ShaderClass.obj
+C:\Users\jjace\Desktop\dev\TFG\Render_engine\src\Main.cpp;C:\Users\jjace\Desktop\dev\TFG\Render_engine\lluanllax_engine\x64\Debug\Main.obj
+C:\Users\jjace\Desktop\dev\TFG\Render_engine\src\Source\EBO.cpp;C:\Users\jjace\Desktop\dev\TFG\Render_engine\lluanllax_engine\x64\Debug\EBO.obj
+C:\Users\jjace\Desktop\dev\TFG\Render_engine\src\Source\ShaderClass.cpp;C:\Users\jjace\Desktop\dev\TFG\Render_engine\lluanllax_engine\x64\Debug\ShaderClass.obj
+C:\Users\jjace\Desktop\dev\TFG\Render_engine\src\Source\Texture.cpp;C:\Users\jjace\Desktop\dev\TFG\Render_engine\lluanllax_engine\x64\Debug\Texture.obj
 C:\Users\jjace\Desktop\dev\TFG\Render_engine\stb.cpp;C:\Users\jjace\Desktop\dev\TFG\Render_engine\lluanllax_engine\x64\Debug\stb.obj
-C:\Users\jjace\Desktop\dev\TFG\Render_engine\Source\VAO.cpp;C:\Users\jjace\Desktop\dev\TFG\Render_engine\lluanllax_engine\x64\Debug\VAO.obj
-C:\Users\jjace\Desktop\dev\TFG\Render_engine\Source\VBO.cpp;C:\Users\jjace\Desktop\dev\TFG\Render_engine\lluanllax_engine\x64\Debug\VBO.obj
+C:\Users\jjace\Desktop\dev\TFG\Render_engine\src\Source\VAO.cpp;C:\Users\jjace\Desktop\dev\TFG\Render_engine\lluanllax_engine\x64\Debug\VAO.obj
+C:\Users\jjace\Desktop\dev\TFG\Render_engine\src\Source\VBO.cpp;C:\Users\jjace\Desktop\dev\TFG\Render_engine\lluanllax_engine\x64\Debug\VBO.obj
