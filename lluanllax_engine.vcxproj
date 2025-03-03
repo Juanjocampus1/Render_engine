@@ -75,32 +75,32 @@
     </PublicIncludeDirectories>
     <PublicModuleDirectories>
     </PublicModuleDirectories>
-    <IncludePath>C:\Users\jjace\Desktop\dev\TFG\Render_engine\Libraries\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\jjace\Desktop\dev\TFG\Render_engine\Libraries\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>E:\deberes\2º DE DAM\lluanllax_engine\Render_engine\Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\deberes\2º DE DAM\lluanllax_engine\Render_engine\Libraries\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <PublicIncludeDirectories>
     </PublicIncludeDirectories>
     <PublicModuleDirectories>
     </PublicModuleDirectories>
-    <IncludePath>C:\Users\lluanllo\source\repos\lluanllax_engine\Libraries\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\lluanllo\source\repos\lluanllax_engine\Libraries\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>E:\deberes\2º DE DAM\lluanllax_engine\Render_engine\Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\deberes\2º DE DAM\lluanllax_engine\Render_engine\Libraries\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <PublicIncludeDirectories>
     </PublicIncludeDirectories>
     <PublicModuleDirectories>
     </PublicModuleDirectories>
-    <IncludePath>C:\Users\jjace\Desktop\dev\TFG\Render_engine\Libraries\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\jjace\Desktop\dev\TFG\Render_engine\Libraries\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>E:\deberes\2º DE DAM\lluanllax_engine\Render_engine\Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\deberes\2º DE DAM\lluanllax_engine\Render_engine\Libraries\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <PublicIncludeDirectories>
     </PublicIncludeDirectories>
     <PublicModuleDirectories>
     </PublicModuleDirectories>
-    <IncludePath>C:\Users\lluanllo\source\repos\lluanllax_engine\Libraries\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\lluanllo\source\repos\lluanllax_engine\Libraries\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>E:\deberes\2º DE DAM\lluanllax_engine\Render_engine\Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\deberes\2º DE DAM\lluanllax_engine\Render_engine\Libraries\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -165,6 +165,7 @@
   <ItemGroup>
     <ClCompile Include="glad.c" />
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Source\Camera.cpp" />
     <ClCompile Include="src\Source\EBO.cpp" />
     <ClCompile Include="src\Source\ShaderClass.cpp" />
     <ClCompile Include="src\Source\Texture.cpp" />
@@ -177,6 +178,7 @@
     <None Include="Shaders\VertexShader.glsl" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Header_Files\Camera.h" />
     <ClInclude Include="src\Header_Files\EBO.h" />
     <ClInclude Include="src\Header_Files\ShaderClass.h" />
     <ClInclude Include="src\Header_Files\Texture.h" />

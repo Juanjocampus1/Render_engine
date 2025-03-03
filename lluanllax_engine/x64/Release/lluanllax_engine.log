@@ -1,5 +1,9 @@
-﻿  glad.c
-  Main.cpp
-C:\Users\lluanllo\source\repos\lluanllax_engine\Libraries\include\glad\glad.h(27,1): error C1189: #error:  OpenGL header already included, remove this include, glad already provides it
-  (compilando archivo de origen "Main.cpp")
-  
+﻿  Camera.cpp
+E:\deberes\2º DE DAM\lluanllax_engine\Render_engine\src\Source\Camera.cpp(104,26): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+LINK : warning LNK4098: la biblioteca predeterminada'MSVCRTD' entra en conflicto con otras bibliotecas; use la biblioteca /NODEFAULTLIB:biblioteca
+  Generando código
+  2 of 420 functions ( 0.5%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    7 functions had inline decision re-evaluated but remain unchanged
+  Generación de código finalizada
+  lluanllax_engine.vcxproj -> E:\deberes\2º DE DAM\lluanllax_engine\Render_engine\x64\Release\lluanllax_engine.exe
