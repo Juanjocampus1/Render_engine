@@ -30,8 +30,8 @@ GLuint indices[] =
 
 
 
-int main()
-{
+int main(){
+
 	// Initialize GLFW
 	glfwInit();
 
@@ -112,8 +112,6 @@ int main()
 		// Take care of all GLFW events
 		glfwPollEvents();
 	}
-
-
 
 	// Delete all the objects we've created
 	VAO1.Delete();
