@@ -3,24 +3,44 @@
   "WorkspaceRootPath": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\Shaders\\FragmentShader.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:Shaders\\FragmentShader.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Header_Files\\Texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Header_Files\\Texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Source\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Source\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Header_Files\\Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Header_Files\\Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Source\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Source\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Header_Files\\Texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Header_Files\\Texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\Shaders\\VertexShader.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:Shaders\\VertexShader.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Header_Files\\EBO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Header_Files\\EBO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Source\\EBO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Source\\EBO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Source\\VBO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Source\\VBO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\Shaders\\lightVertex.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -46,32 +66,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 317,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Texture.cpp",
-              "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Source\\Texture.cpp",
-              "RelativeDocumentMoniker": "src\\Source\\Texture.cpp",
-              "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Source\\Texture.cpp",
-              "RelativeToolTip": "src\\Source\\Texture.cpp",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Mesh.cpp",
+              "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Source\\Mesh.cpp",
+              "RelativeDocumentMoniker": "src\\Source\\Mesh.cpp",
+              "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Source\\Mesh.cpp",
+              "RelativeToolTip": "src\\Source\\Mesh.cpp",
+              "ViewState": "AgIAABcAAAAAAAAAAAAIwDgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-04T11:04:12.221Z",
+              "WhenOpened": "2025-03-04T17:02:03.435Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Texture.h",
-              "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Header_Files\\Texture.h",
-              "RelativeDocumentMoniker": "src\\Header_Files\\Texture.h",
-              "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Header_Files\\Texture.h",
-              "RelativeToolTip": "src\\Header_Files\\Texture.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAPAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Mesh.h",
+              "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Header_Files\\Mesh.h",
+              "RelativeDocumentMoniker": "src\\Header_Files\\Mesh.h",
+              "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Header_Files\\Mesh.h",
+              "RelativeToolTip": "src\\Header_Files\\Mesh.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-04T11:03:29.273Z",
+              "WhenOpened": "2025-03-04T16:51:09.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VBO.cpp",
+              "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Source\\VBO.cpp",
+              "RelativeDocumentMoniker": "src\\Source\\VBO.cpp",
+              "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Source\\VBO.cpp",
+              "RelativeToolTip": "src\\Source\\VBO.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-04T17:00:24.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EBO.cpp",
+              "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Source\\EBO.cpp",
+              "RelativeDocumentMoniker": "src\\Source\\EBO.cpp",
+              "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Source\\EBO.cpp",
+              "RelativeToolTip": "src\\Source\\EBO.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-04T16:59:48.838Z",
               "EditorCaption": ""
             },
             {
@@ -84,20 +130,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
+              "Title": "EBO.h",
+              "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Header_Files\\EBO.h",
+              "RelativeDocumentMoniker": "src\\Header_Files\\EBO.h",
+              "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Header_Files\\EBO.h",
+              "RelativeToolTip": "src\\Header_Files\\EBO.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-04T16:54:54.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Texture.cpp",
+              "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Source\\Texture.cpp",
+              "RelativeDocumentMoniker": "src\\Source\\Texture.cpp",
+              "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Source\\Texture.cpp",
+              "RelativeToolTip": "src\\Source\\Texture.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-04T11:04:12.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Texture.h",
+              "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Header_Files\\Texture.h",
+              "RelativeDocumentMoniker": "src\\Header_Files\\Texture.h",
+              "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Header_Files\\Texture.h",
+              "RelativeToolTip": "src\\Header_Files\\Texture.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-04T11:03:29.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "FragmentShader.glsl",
               "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\Shaders\\FragmentShader.glsl",
               "RelativeDocumentMoniker": "Shaders\\FragmentShader.glsl",
               "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\Shaders\\FragmentShader.glsl",
               "RelativeToolTip": "Shaders\\FragmentShader.glsl",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAIwCgAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-03-03T23:20:08.556Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "lightVertex.glsl",
               "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\Shaders\\lightVertex.glsl",
               "RelativeDocumentMoniker": "Shaders\\lightVertex.glsl",
@@ -105,12 +190,11 @@
               "RelativeToolTip": "Shaders\\lightVertex.glsl",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-03-03T22:57:38.449Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T22:57:38.449Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "lightFragment.glsl",
               "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\Shaders\\lightFragment.glsl",
               "RelativeDocumentMoniker": "Shaders\\lightFragment.glsl",
@@ -118,25 +202,24 @@
               "RelativeToolTip": "Shaders\\lightFragment.glsl",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-03-03T22:55:37.996Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T22:55:37.996Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "VertexShader.glsl",
               "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\Shaders\\VertexShader.glsl",
               "RelativeDocumentMoniker": "Shaders\\VertexShader.glsl",
               "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\Shaders\\VertexShader.glsl",
               "RelativeToolTip": "Shaders\\VertexShader.glsl",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-03-03T21:28:06.331Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "Camera.cpp",
               "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Source\\Camera.cpp",
               "RelativeDocumentMoniker": "src\\Source\\Camera.cpp",
@@ -144,12 +227,11 @@
               "RelativeToolTip": "src\\Source\\Camera.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-03T21:07:17.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T21:07:17.429Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "Camera.h",
               "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Header_Files\\Camera.h",
               "RelativeDocumentMoniker": "src\\Header_Files\\Camera.h",
@@ -157,18 +239,17 @@
               "RelativeToolTip": "src\\Header_Files\\Camera.h",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-03T19:54:12.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T19:54:12.562Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Main.cpp",
               "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Main.cpp",
               "RelativeDocumentMoniker": "src\\Main.cpp",
-              "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Main.cpp*",
-              "RelativeToolTip": "src\\Main.cpp*",
-              "ViewState": "AgIAAJIAAAAAAAAAAAAQwJcAAAApAAAAAAAAAA==",
+              "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\Render_engine\\src\\Main.cpp",
+              "RelativeToolTip": "src\\Main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-03T21:10:52.28Z",
               "EditorCaption": ""

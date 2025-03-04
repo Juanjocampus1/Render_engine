@@ -164,9 +164,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
+    <ClCompile Include="src\Header_Files\Mesh.h" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Source\Camera.cpp" />
     <ClCompile Include="src\Source\EBO.cpp" />
+    <ClCompile Include="src\Source\Mesh.cpp" />
     <ClCompile Include="src\Source\ShaderClass.cpp" />
     <ClCompile Include="src\Source\Texture.cpp" />
     <ClCompile Include="stb.cpp" />
