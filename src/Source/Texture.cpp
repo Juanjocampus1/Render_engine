@@ -1,7 +1,6 @@
 #include "../Header_Files/Texture.h"
 
-Texture::Texture(const char* image, GLenum texType, GLenum slot, GLenum format, GLenum pixelType) {
-    // Assigns the type of the texture to the texture object
+Texture::Texture(const char* image, GLenum texType, GLuint slot, GLenum format, GLenum pixelType){    // Assigns the type of the texture to the texture object
     type = texType;
 
     // Stores the width, height, and the number of color channels of the image
@@ -19,7 +18,8 @@ Texture::Texture(const char* image, GLenum texType, GLenum slot, GLenum format, 
     // Generates an OpenGL texture object
     glGenTextures(1, &ID);
     // Assigns the texture to a Texture Unit
-    glActiveTexture(slot);
+    glActiveTexture(GL_TEXTURE0 + slot);
+	unit = slot;
     glBindTexture(texType, ID);
 
     // Configures the type of algorithm that is used to make the image smaller or bigger
@@ -36,6 +36,9 @@ Texture::Texture(const char* image, GLenum texType, GLenum slot, GLenum format, 
     }
     else if (numColCh == 3) {
         glTexImage2D(texType, 0, GL_RGB, widthImg, heightImg, 0, format, pixelType, bytes);
+    }
+    else if (numColCh == 1) {
+		glTexImage2D(texType, 0, GL_RED, widthImg, heightImg, 0, format, pixelType, bytes);
     }
     else {
         std::cout << "Failed to load texture: unsupported number of channels" << std::endl;
@@ -61,6 +64,7 @@ void Texture::texUnit(Shader& shader, const char* uniform, GLuint unit) {
 }
 
 void Texture::Bind() {
+    glActiveTexture(GL_TEXTURE0 + unit);
     glBindTexture(type, ID);
 }
 

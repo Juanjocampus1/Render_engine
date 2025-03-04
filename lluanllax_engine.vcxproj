@@ -175,6 +175,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Shaders\FragmentShader.glsl" />
+    <None Include="Shaders\lightFragment.glsl" />
+    <None Include="Shaders\lightVertex.glsl" />
     <None Include="Shaders\VertexShader.glsl" />
   </ItemGroup>
   <ItemGroup>
@@ -186,7 +188,8 @@
     <ClInclude Include="src\Header_Files\VBO.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Resources\texture.png" />
+    <Image Include="Resources\planks.png" />
+    <Image Include="Resources\planksSpec.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
