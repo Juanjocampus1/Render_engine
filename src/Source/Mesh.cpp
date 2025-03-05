@@ -22,7 +22,6 @@ Mesh::Mesh(std::vector <Vertex>& vertices, std::vector <GLuint>& indices, std::v
 	EBO.Unbind();
 }
 
-
 void Mesh::Draw(Shader& shader, Camera& camera)
 {
 	// Bind shader to be able to access uniforms
