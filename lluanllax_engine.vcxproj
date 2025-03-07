@@ -179,14 +179,17 @@
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Source\Camera.cpp" />
     <ClCompile Include="src\Source\EBO.cpp" />
+    <ClCompile Include="src\Source\LightManager.cpp" />
     <ClCompile Include="src\Source\Mesh.cpp" />
     <ClCompile Include="src\Source\ShaderClass.cpp" />
     <ClCompile Include="src\Source\Texture.cpp" />
+    <ClCompile Include="src\Source\UIManager.cpp" />
     <ClCompile Include="stb.cpp" />
     <ClCompile Include="src\Source\VAO.cpp" />
     <ClCompile Include="src\Source\VBO.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="imgui.ini" />
     <None Include="Shaders\FragmentShader.glsl" />
     <None Include="Shaders\lightFragment.glsl" />
     <None Include="Shaders\lightVertex.glsl" />
@@ -204,8 +207,10 @@
     <ClInclude Include="imgui\imstb_truetype.h" />
     <ClInclude Include="src\Header_Files\Camera.h" />
     <ClInclude Include="src\Header_Files\EBO.h" />
+    <ClInclude Include="src\Header_Files\LightManager.h" />
     <ClInclude Include="src\Header_Files\ShaderClass.h" />
     <ClInclude Include="src\Header_Files\Texture.h" />
+    <ClInclude Include="src\Header_Files\UIManager.h" />
     <ClInclude Include="src\Header_Files\VAO.h" />
     <ClInclude Include="src\Header_Files\VBO.h" />
   </ItemGroup>

@@ -24,8 +24,8 @@ uniform vec3 lightPos;
 uniform vec3 camPos;
 
 
-vec4 pointLight()
-{	
+vec4 pointLight(){
+
 	// used in two variables so I calculate it here to not have to do it twice
 	vec3 lightVec = lightPos - crntPos;
 
@@ -44,11 +44,17 @@ vec4 pointLight()
 	float diffuse = max(dot(normal, lightDirection), 0.0);
 
 	// specular lighting
-	float specularLight = 1.0;
-	vec3 viewDirection = normalize(camPos - crntPos);
-	vec3 reflectionDirection = reflect(-lightDirection, normal);
-	float specAmount = pow(max(dot(viewDirection, reflectionDirection), 0.0), 16);
-	float specular = specAmount * specularLight;
+	float specular = 0.0;
+	if (diffuse != 0.0){
+		float specularLight = 1.0;
+		vec3 viewDirection = normalize(camPos - crntPos);
+		vec3 reflectionDirection = reflect(-lightDirection, normal);
+
+		vec3 halfVector = normalize(lightDirection + viewDirection);
+
+		float specAmount = pow(max(dot(normal, halfVector), 0.0), 16);
+		float specular = specAmount * specularLight;
+	}
 
 	return (texture(diffuse0, texCoord) * (diffuse * inten + ambient) + texture(specular0, texCoord).r * specular * inten) * lightColor;
 }

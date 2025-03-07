@@ -12,19 +12,17 @@ Camera::Camera(int width, int height, glm::vec3 position) {
 }
 
 void Camera::UpdateMatrix(float FOVdeg, float nearPlane, float farPlane) {
-
-	glm::mat4 view = glm::mat4(1.0f);
-	glm::mat4 projection = glm::mat4(1.0f);
+    glm::mat4 view = glm::mat4(1.0f);
+    glm::mat4 projection = glm::mat4(1.0f);
 
     view = glm::lookAt(Position, Position + Orientation, Up);
     projection = glm::perspective(glm::radians(FOVdeg), (float)width / height, nearPlane, farPlane);
 
-	cameraMatrix = projection * view;
+    cameraMatrix = projection * view;
 }
 
 void Camera::Matrix(Shader& shader, const char* uniform) {
     glUniformMatrix4fv(glGetUniformLocation(shader.ID, uniform), 1, GL_FALSE, glm::value_ptr(cameraMatrix));
-
 }
 
 void Camera::Inputs(GLFWwindow* window) {
@@ -111,4 +109,28 @@ void Camera::Inputs(GLFWwindow* window) {
 void Camera::ScrollCallback(GLFWwindow* window, double xOffset, double yOffset) {
     Camera* camera = static_cast<Camera*>(glfwGetWindowUserPointer(window));
     camera->zoomOffset = yOffset;
+}
+
+glm::vec3 Camera::GetRayFromMouse(GLFWwindow* window) {
+    double mouseX, mouseY;
+    glfwGetCursorPos(window, &mouseX, &mouseY);
+
+    // Normalizar las coordenadas del mouse
+    float x = (2.0f * mouseX) / width - 1.0f;
+    float y = 1.0f - (2.0f * mouseY) / height;
+    float z = 1.0f;
+    glm::vec3 rayNDS = glm::vec3(x, y, z);
+
+    // Convertir a coordenadas de clip
+    glm::vec4 rayClip = glm::vec4(rayNDS.x, rayNDS.y, -1.0, 1.0);
+
+    // Convertir a coordenadas de vista
+    glm::vec4 rayEye = glm::inverse(glm::perspective(glm::radians(FOVdeg), (float)width / height, 0.1f, 100.0f)) * rayClip;
+    rayEye = glm::vec4(rayEye.x, rayEye.y, -1.0, 0.0);
+
+    // Convertir a coordenadas del mundo
+    glm::vec3 rayWorld = glm::vec3(glm::inverse(glm::lookAt(Position, Position + Orientation, Up)) * rayEye);
+    rayWorld = glm::normalize(rayWorld);
+
+    return rayWorld;
 }

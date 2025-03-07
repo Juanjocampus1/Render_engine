@@ -33,6 +33,7 @@ public:
 	void Matrix(Shader& shader, const char* uniform);
     void Inputs(GLFWwindow* window);
     static void ScrollCallback(GLFWwindow* window, double xoffset, double yoffset);
+    glm::vec3 GetRayFromMouse(GLFWwindow* window);
 };
 
 #endif

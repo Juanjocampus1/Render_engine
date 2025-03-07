@@ -1,2 +1,9 @@
 ﻿  Main.cpp
-  lluanllax_engine.vcxproj -> E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\x64\Debug\lluanllax_engine.exe
+  Camera.cpp
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\Camera.cpp(111,26): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\Camera.cpp(119,13): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\Camera.cpp(120,13): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+  LightManager.cpp
+  UIManager.cpp
+  Generando código...
+LINK : fatal error LNK1168: no se puede abrir E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\x64\Debug\lluanllax_engine.exe para escritura
