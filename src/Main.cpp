@@ -1,39 +1,16 @@
 #include <iostream>
-#include <vector>
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
-#include <stb/stb_image.h>
-#include <glm/glm.hpp>
-#include <glm/gtc/matrix_transform.hpp>
-#include <glm/gtc/type_ptr.hpp>
 
 #include "imgui.h"
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
 
-#include "Header_Files/Mesh.h"
-#include "Header_Files/LightManager.h"
+#include "Header_Files/Scene.h"
 #include "Header_Files/UIManager.h"
-
+#include "Header_Files/LightManager.h"
+#include "Header_Files/MeshManager.h"
 
 int SCR_WIDTH = 1920;
 int SCR_HEIGHT = 1080;
-
-// Vertices coordinates
-Vertex vertices[] =
-{ //               COORDINATES           /            COLORS          /           NORMALS         /       TEXTURE COORDINATES    //
-    Vertex{glm::vec3(-1.0f, 0.0f,  1.0f), glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec2(0.0f, 0.0f)},
-    Vertex{glm::vec3(-1.0f, 0.0f, -1.0f), glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec2(0.0f, 1.0f)},
-    Vertex{glm::vec3(1.0f, 0.0f, -1.0f), glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec2(1.0f, 1.0f)},
-    Vertex{glm::vec3(1.0f, 0.0f,  1.0f), glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec2(1.0f, 0.0f)}
-};
-
-// Indices for vertices order
-GLuint indices[] =
-{
-    0, 1, 2,
-    0, 2, 3
-};
 
 bool RayIntersectsSphere(const glm::vec3& rayOrigin, const glm::vec3& rayDirection, const glm::vec3& sphereCenter, float sphereRadius) {
     glm::vec3 oc = rayOrigin - sphereCenter;
@@ -85,15 +62,16 @@ int main() {
 
     // Generates Shader object using shaders default.vert and default.frag
     Shader shaderProgram("Shaders/VertexShader.glsl", "Shaders/FragmentShader.glsl");
-    std::vector<Vertex> verts(vertices, vertices + sizeof(vertices) / sizeof(Vertex));
-    std::vector<GLuint> ind(indices, indices + sizeof(indices) / sizeof(GLuint));
-    std::vector<Texture> tex(texture, texture + sizeof(texture) / sizeof(Texture));
-    Mesh floor(verts, ind, tex);
 
-    Shader lightShader("Shaders/lightVertex.glsl", "Shaders/lightFragment.glsl");
+    // Create a scene
+    Scene scene;
+
+    // Create MeshManager and add a default cube to the scene
+    MeshManager meshManager(scene);
+    meshManager.AddCube(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::quat(1.0f, 0.0f, 0.0f, 0.0f));
 
     LightManager lightManager;
-    UIManager uiManager(lightManager);
+    UIManager uiManager(lightManager, meshManager, scene);
 
     Camera camera(SCR_WIDTH, SCR_HEIGHT, glm::vec3(0.0f, 0.0f, 2.0f));
 
@@ -121,21 +99,12 @@ int main() {
         camera.Inputs(window);
         camera.UpdateMatrix(45.0f, 0.1f, 100.0f);
 
-        // Update light positions and colors in shaders
-        for (const auto& light : lightManager.GetLights()) {
-            lightShader.Activate();
-            glUniformMatrix4fv(glGetUniformLocation(lightShader.ID, "model"), 1, GL_FALSE, glm::value_ptr(light.model));
-            glUniform4f(glGetUniformLocation(lightShader.ID, "lightColor"), light.color.x, light.color.y, light.color.z, light.color.w);
-            shaderProgram.Activate();
-            glUniform3f(glGetUniformLocation(shaderProgram.ID, "lightPos"), light.position.x, light.position.y, light.position.z);
-            glUniform4f(glGetUniformLocation(shaderProgram.ID, "lightColor"), light.color.x, light.color.y, light.color.z, light.color.w);
-        }
+        // Update and draw the scene
+        scene.Update();
+        scene.Draw(shaderProgram, camera);
 
-        floor.Draw(shaderProgram, camera);
-
-        for (const auto& light : lightManager.GetLights()) {
-            light.mesh->Draw(lightShader, camera);
-        }
+        // Render the UI
+        uiManager.Render();
 
         // Detectar clic del ratón
         if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS) {
@@ -148,9 +117,14 @@ int main() {
                     break;
                 }
             }
-        }
 
-        uiManager.Render();
+            for (const auto& mesh : meshManager.GetMeshes()) {
+                if (RayIntersectsSphere(rayOrigin, rayDirection, glm::vec3(mesh->transform[3]), 1.0f)) {
+                    uiManager.selectedObjectId = mesh->id;
+                    break;
+                }
+            }
+        }
 
         ImGui::Render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
@@ -166,7 +140,6 @@ int main() {
     ImGui_ImplGlfw_Shutdown();
     ImGui::DestroyContext();
     shaderProgram.Delete();
-    lightShader.Delete();
     // Delete window before ending the program
     glfwDestroyWindow(window);
     // Terminate GLFW before ending the program

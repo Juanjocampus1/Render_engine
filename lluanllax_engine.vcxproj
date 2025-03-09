@@ -181,6 +181,9 @@
     <ClCompile Include="src\Source\EBO.cpp" />
     <ClCompile Include="src\Source\LightManager.cpp" />
     <ClCompile Include="src\Source\Mesh.cpp" />
+    <ClCompile Include="src\Source\MeshManager.cpp" />
+    <ClCompile Include="src\Source\node.cpp" />
+    <ClCompile Include="src\Source\Scene.cpp" />
     <ClCompile Include="src\Source\ShaderClass.cpp" />
     <ClCompile Include="src\Source\Texture.cpp" />
     <ClCompile Include="src\Source\UIManager.cpp" />
@@ -208,6 +211,9 @@
     <ClInclude Include="src\Header_Files\Camera.h" />
     <ClInclude Include="src\Header_Files\EBO.h" />
     <ClInclude Include="src\Header_Files\LightManager.h" />
+    <ClInclude Include="src\Header_Files\MeshManager.h" />
+    <ClInclude Include="src\Header_Files\Node.h" />
+    <ClInclude Include="src\Header_Files\Scene.h" />
     <ClInclude Include="src\Header_Files\ShaderClass.h" />
     <ClInclude Include="src\Header_Files\Texture.h" />
     <ClInclude Include="src\Header_Files\UIManager.h" />

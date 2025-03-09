@@ -1,0 +1,27 @@
+#ifndef NODE_H
+#define NODE_H
+
+#include "Mesh.h"
+
+class Node {
+public:
+    Node* parent;
+    Node* leftChild;
+    Node* rightChild;
+    Mesh* mesh;
+    glm::mat4 transform;
+    int id;
+
+    Node(Mesh* mesh, const glm::mat4& transform = glm::mat4(1.0f));
+    ~Node();
+
+    void AddChild(Node* child);
+    void RemoveChild(Node* child);
+    void UpdateTransform(const glm::mat4& parentTransform = glm::mat4(1.0f));
+    void Draw(Shader& shader, Camera& camera);
+};
+
+#endif // NODE_H
+
+
+
