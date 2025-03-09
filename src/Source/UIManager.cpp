@@ -49,9 +49,9 @@ void UIManager::RenderHierarchy() {
         ImGui::PopID();
     }
     for (const auto& mesh : meshManager.GetMeshes()) {
-        ImGui::PushID(mesh->id);
-        if (ImGui::Selectable(("Cube " + std::to_string(mesh->id)).c_str(), selectedObjectId == mesh->id)) {
-            selectedObjectId = mesh->id; // Actualizar el ID del objeto seleccionado
+        ImGui::PushID(mesh.id);
+        if (ImGui::Selectable(("Cube " + std::to_string(mesh.id)).c_str(), selectedObjectId == mesh.id)) {
+            selectedObjectId = mesh.id; // Actualizar el ID del objeto seleccionado
         }
         ImGui::PopID();
     }
@@ -80,24 +80,19 @@ void UIManager::RenderProperties() {
             }
         }
         else {
-            Node* selectedNode = nullptr;
-            for (const auto& mesh : meshManager.GetMeshes()) {
-                if (mesh->id == selectedObjectId) {
-                    selectedNode = mesh;
-                    break;
+            MeshData* selectedMesh = meshManager.GetMesh(selectedObjectId);
+            if (selectedMesh) {
+                if (ImGui::SliderFloat3("Translation", glm::value_ptr(selectedMesh->position), -10.0f, 10.0f)) {
+                    meshManager.UpdateMesh(selectedObjectId, selectedMesh->position, selectedMesh->scale, selectedMesh->rotation);
                 }
-            }
-            if (selectedNode) {
-                static glm::vec3 translation(0.0f, 0.0f, 0.0f);
-                static glm::vec3 rotation(0.0f, 0.0f, 0.0f);
-                static glm::vec3 scale(1.0f, 1.0f, 1.0f);
-                ImGui::SliderFloat3("Translation", glm::value_ptr(translation), -10.0f, 10.0f);
-                ImGui::SliderFloat3("Rotation", glm::value_ptr(rotation), -180.0f, 180.0f);
-                ImGui::SliderFloat3("Scale", glm::value_ptr(scale), 0.1f, 10.0f);
-
-                glm::quat rotQuat = glm::quat(glm::radians(rotation));
-                selectedNode->mesh->SetTransform(translation, rotQuat, scale);
-
+                glm::vec3 rotationEuler = glm::degrees(glm::eulerAngles(selectedMesh->rotation));
+                if (ImGui::SliderFloat3("Rotation", glm::value_ptr(rotationEuler), -180.0f, 180.0f)) {
+                    glm::quat rotQuat = glm::quat(glm::radians(rotationEuler));
+                    meshManager.UpdateMesh(selectedObjectId, selectedMesh->position, selectedMesh->scale, rotQuat);
+                }
+                if (ImGui::SliderFloat3("Scale", glm::value_ptr(selectedMesh->scale), 0.1f, 10.0f)) {
+                    meshManager.UpdateMesh(selectedObjectId, selectedMesh->position, selectedMesh->scale, selectedMesh->rotation);
+                }
                 if (ImGui::Button("Remove Mesh")) {
                     meshManager.RemoveMesh(selectedObjectId);
                     selectedObjectId = -1; // Deseleccionar el objeto
@@ -133,3 +128,4 @@ void UIManager::RenderAddMenu() {
         ImGui::EndPopup();
     }
 }
+

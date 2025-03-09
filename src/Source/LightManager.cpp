@@ -1,6 +1,6 @@
 #include "../Header_Files/LightManager.h"
 
-LightManager::LightManager() : nextId(0) {}
+LightManager::LightManager(Scene& scene) : scene(scene), nextId(0) {}
 
 void LightManager::AddLight(const glm::vec3& position, const glm::vec4& color, LightType type) {
     Light light;
@@ -40,17 +40,25 @@ void LightManager::AddLight(const glm::vec3& position, const glm::vec4& color, L
     std::vector<Texture> lightTextures; // No necesitamos texturas para las luces
 
     light.mesh = new Mesh(lightVertices, lightIndices, lightTextures);
+    light.node = new Node(light.mesh);
+    light.node->transform = glm::translate(glm::mat4(1.0f), position);
+    scene.AddNode(light.node);
 
     lights.push_back(light);
 }
 
 void LightManager::RemoveLight(int id) {
-    auto it = std::remove_if(lights.begin(), lights.end(), [id](const Light& light) {
+    auto it = std::find_if(lights.begin(), lights.end(), [id](const Light& light) {
         return light.id == id;
         });
     if (it != lights.end()) {
-        delete it->mesh; // Eliminar la instancia de Mesh
-        lights.erase(it, lights.end());
+        if (it->node->parent) {
+            it->node->parent->RemoveChild(it->node);
+        }
+        else {
+            scene.RemoveNode(it->node);
+        }
+        lights.erase(it);
     }
 }
 
@@ -61,6 +69,7 @@ void LightManager::UpdateLight(int id, const glm::vec3& position, const glm::vec
             light.color = color;
             light.model = glm::translate(glm::mat4(1.0f), position);
             light.type = type;
+            light.node->transform = light.model;
             break;
         }
     }
@@ -71,6 +80,7 @@ void LightManager::UpdateLightPosition(int id, const glm::vec3& position) {
         if (light.id == id) {
             light.position = position;
             light.model = glm::translate(glm::mat4(1.0f), position);
+            light.node->transform = light.model;
             break;
         }
     }
@@ -88,3 +98,4 @@ Light* LightManager::GetLight(int id) {
 std::vector<Light>& LightManager::GetLights() {
     return lights;
 }
+

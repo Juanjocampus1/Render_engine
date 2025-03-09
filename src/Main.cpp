@@ -68,9 +68,8 @@ int main() {
 
     // Create MeshManager and add a default cube to the scene
     MeshManager meshManager(scene);
-    meshManager.AddCube(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::quat(1.0f, 0.0f, 0.0f, 0.0f));
 
-    LightManager lightManager;
+    LightManager lightManager(scene);
     UIManager uiManager(lightManager, meshManager, scene);
 
     Camera camera(SCR_WIDTH, SCR_HEIGHT, glm::vec3(0.0f, 0.0f, 2.0f));
@@ -119,8 +118,8 @@ int main() {
             }
 
             for (const auto& mesh : meshManager.GetMeshes()) {
-                if (RayIntersectsSphere(rayOrigin, rayDirection, glm::vec3(mesh->transform[3]), 1.0f)) {
-                    uiManager.selectedObjectId = mesh->id;
+                if (RayIntersectsSphere(rayOrigin, rayDirection, mesh.position, 1.0f)) {
+                    uiManager.selectedObjectId = mesh.id;
                     break;
                 }
             }

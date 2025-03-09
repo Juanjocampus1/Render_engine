@@ -4,6 +4,7 @@ Scene::Scene() : root(nullptr) {}
 
 Scene::~Scene() {
     delete root;
+    root = nullptr;
 }
 
 void Scene::AddNode(Node* node) {

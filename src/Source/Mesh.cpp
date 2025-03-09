@@ -21,7 +21,7 @@ Mesh::Mesh(std::vector <Vertex>& vertices, std::vector <GLuint>& indices, std::v
     VAO.Unbind();
     VBO.Unbind();
     EBO.Unbind();
-}
+} 
 
 void Mesh::SetTransform(const glm::vec3& translation, const glm::quat& rotation, const glm::vec3& scale) {
     modelMatrix = glm::translate(glm::mat4(1.0f), translation) *

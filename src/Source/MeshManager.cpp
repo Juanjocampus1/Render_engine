@@ -1,6 +1,6 @@
 #include "../Header_Files/MeshManager.h"
 
-MeshManager::MeshManager(Scene& scene) : scene(scene) {}
+MeshManager::MeshManager(Scene& scene) : scene(scene), nextId(0) {}
 
 void MeshManager::AddCube(const glm::vec3& position, const glm::vec3& scale, const glm::quat& rotation) {
     std::vector<Vertex> vertices = {
@@ -31,20 +31,56 @@ void MeshManager::AddCube(const glm::vec3& position, const glm::vec3& scale, con
         glm::mat4_cast(rotation) *
         glm::scale(glm::mat4(1.0f), scale);
     scene.AddNode(cubeNode);
-    meshes.push_back(cubeNode);
+
+    MeshData meshData;
+    meshData.id = nextId++;
+    meshData.position = position;
+    meshData.scale = scale;
+    meshData.rotation = rotation;
+    meshData.mesh = cubeMesh;
+    meshData.node = cubeNode;
+
+    meshes.push_back(meshData);
 }
 
 void MeshManager::RemoveMesh(int id) {
-    auto it = std::remove_if(meshes.begin(), meshes.end(), [id](Node* mesh) {
-        return mesh->id == id;
+    auto it = std::find_if(meshes.begin(), meshes.end(), [id](const MeshData& mesh) {
+        return mesh.id == id;
         });
     if (it != meshes.end()) {
-        scene.RemoveNode(*it);
-        delete* it; // Eliminar la instancia de Node
-        meshes.erase(it, meshes.end());
+        if (it->node->parent) {
+            it->node->parent->RemoveChild(it->node);
+        }
+        else {
+            scene.RemoveNode(it->node);
+        }
+        meshes.erase(it);
     }
 }
 
-std::vector<Node*> MeshManager::GetMeshes() {
+void MeshManager::UpdateMesh(int id, const glm::vec3& position, const glm::vec3& scale, const glm::quat& rotation) {
+    for (auto& mesh : meshes) {
+        if (mesh.id == id) {
+            mesh.position = position;
+            mesh.scale = scale;
+            mesh.rotation = rotation;
+            mesh.node->transform = glm::translate(glm::mat4(1.0f), position) *
+                glm::mat4_cast(rotation) *
+                glm::scale(glm::mat4(1.0f), scale);
+            break;
+        }
+    }
+}
+
+std::vector<MeshData>& MeshManager::GetMeshes() {
     return meshes;
+}
+
+MeshData* MeshManager::GetMesh(int id) {
+    for (auto& mesh : meshes) {
+        if (mesh.id == id) {
+            return &mesh;
+        }
+    }
+    return nullptr;
 }

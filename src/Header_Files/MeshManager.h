@@ -5,16 +5,28 @@
 #include "Node.h"
 #include "Scene.h"
 
+struct MeshData {
+    int id;
+    glm::vec3 position;
+    glm::vec3 scale;
+    glm::quat rotation;
+    Mesh* mesh;
+    Node* node;
+};
+
 class MeshManager {
 public:
     MeshManager(Scene& scene);
     void AddCube(const glm::vec3& position, const glm::vec3& scale, const glm::quat& rotation);
     void RemoveMesh(int id);
-    std::vector<Node*> GetMeshes();
+    void UpdateMesh(int id, const glm::vec3& position, const glm::vec3& scale, const glm::quat& rotation);
+    std::vector<MeshData>& GetMeshes();
+    MeshData* GetMesh(int id);
 
 private:
     Scene& scene;
-    std::vector<Node*> meshes;
+    std::vector<MeshData> meshes;
+    int nextId;
 };
 
 #endif // MESHMANAGER_H
