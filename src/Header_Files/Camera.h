@@ -30,7 +30,7 @@ public:
     Camera(int width, int height, glm::vec3 position);
 
     void UpdateMatrix(float FOVdeg, float nearPlane, float farPlane);
-	void Matrix(Shader& shader, const char* uniform);
+	void Matrix(Shader& shader, const char* uniform) const;
     void Inputs(GLFWwindow* window);
     static void ScrollCallback(GLFWwindow* window, double xoffset, double yoffset);
     glm::vec3 GetRayFromMouse(GLFWwindow* window);

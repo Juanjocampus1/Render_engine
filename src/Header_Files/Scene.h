@@ -13,7 +13,7 @@ public:
     void AddNode(Node* node);
     void RemoveNode(Node* node);
     void Update();
-    void Draw(Shader& shader, Camera& camera);
+    void Draw(const Camera& camera);
 };
 
 #endif // SCENE_H

@@ -55,13 +55,9 @@ int main() {
     // In this case the viewport goes from x = 0, y = 0, to x = 800, y = 800
     glViewport(0, 0, SCR_WIDTH, SCR_HEIGHT);
 
-    Texture texture[]{
-        Texture("Resources/planks.png","diffuse", 0, GL_RGBA, GL_UNSIGNED_BYTE),
-        Texture("Resources/planksSpec.png", "specular", 1, GL_RED, GL_UNSIGNED_BYTE)
-    };
 
     // Generates Shader object using shaders default.vert and default.frag
-    Shader shaderProgram("Shaders/VertexShader.glsl", "Shaders/FragmentShader.glsl");
+    Shader lightShader("Shaders/lightVertex.glsl", "Shaders/lightFragment.glsl");
 
     // Create a scene
     Scene scene;
@@ -69,7 +65,7 @@ int main() {
     // Create MeshManager and add a default cube to the scene
     MeshManager meshManager(scene);
 
-    LightManager lightManager(scene);
+    LightManager lightManager(scene, lightShader);
     UIManager uiManager(lightManager, meshManager, scene);
 
     Camera camera(SCR_WIDTH, SCR_HEIGHT, glm::vec3(0.0f, 0.0f, 2.0f));
@@ -98,12 +94,10 @@ int main() {
         camera.Inputs(window);
         camera.UpdateMatrix(45.0f, 0.1f, 100.0f);
 
+        scene.Draw(camera);
         // Update and draw the scene
         scene.Update();
-        scene.Draw(shaderProgram, camera);
-
-        // Render the UI
-        uiManager.Render();
+		
 
         // Detectar clic del ratón
         if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS) {
@@ -125,6 +119,9 @@ int main() {
             }
         }
 
+        // Render the UI
+        uiManager.Render(camera);
+
         ImGui::Render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 
@@ -138,7 +135,6 @@ int main() {
     ImGui_ImplOpenGL3_Shutdown();
     ImGui_ImplGlfw_Shutdown();
     ImGui::DestroyContext();
-    shaderProgram.Delete();
     // Delete window before ending the program
     glfwDestroyWindow(window);
     // Terminate GLFW before ending the program

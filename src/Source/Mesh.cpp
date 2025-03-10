@@ -21,15 +21,16 @@ Mesh::Mesh(std::vector <Vertex>& vertices, std::vector <GLuint>& indices, std::v
     VAO.Unbind();
     VBO.Unbind();
     EBO.Unbind();
-} 
+}
 
 void Mesh::SetTransform(const glm::vec3& translation, const glm::quat& rotation, const glm::vec3& scale) {
     modelMatrix = glm::translate(glm::mat4(1.0f), translation) *
-                glm::mat4_cast(rotation) *
-                glm::scale(glm::mat4(1.0f), scale);
+        glm::mat4_cast(rotation) *
+        glm::scale(glm::mat4(1.0f), scale);
 }
 
-void Mesh::Draw(Shader& shader, Camera& camera) {
+
+void Mesh::Draw(Shader& shader, const Camera& camera) {
     // Bind shader to be able to access uniforms
     shader.Activate();
     VAO.Bind();
@@ -58,5 +59,6 @@ void Mesh::Draw(Shader& shader, Camera& camera) {
     glUniformMatrix4fv(glGetUniformLocation(shader.ID, "model"), 1, GL_FALSE, glm::value_ptr(modelMatrix));
 
     // Draw the actual mesh
-    glDrawElements(GL_TRIANGLES, indices.size(), GL_UNSIGNED_INT, 0);
+    glDrawElements(GL_TRIANGLES, static_cast<GLsizei>(indices.size()), GL_UNSIGNED_INT, 0);
 }
+

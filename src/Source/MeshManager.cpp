@@ -26,7 +26,8 @@ void MeshManager::AddCube(const glm::vec3& position, const glm::vec3& scale, con
     std::vector<Texture> textures; // No necesitamos texturas para los cubos
 
     Mesh* cubeMesh = new Mesh(vertices, indices, textures);
-    Node* cubeNode = new Node(cubeMesh);
+    Shader* cubeShader = new Shader("Shaders/VertexShader.glsl", "Shaders/FragmentShader.glsl");
+    Node* cubeNode = new Node(cubeMesh, cubeShader);
     cubeNode->transform = glm::translate(glm::mat4(1.0f), position) *
         glm::mat4_cast(rotation) *
         glm::scale(glm::mat4(1.0f), scale);

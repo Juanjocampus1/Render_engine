@@ -32,8 +32,10 @@ void Scene::Update() {
     }
 }
 
-void Scene::Draw(Shader& shader, Camera& camera) {
+void Scene::Draw(const Camera& camera) {
     if (root) {
-        root->Draw(shader, camera);
+        root->Draw(camera);
     }
 }
+
+

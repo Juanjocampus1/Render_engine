@@ -18,7 +18,7 @@ public:
     glm::mat4 modelMatrix;
 
     Mesh(std::vector <Vertex>& vertices, std::vector <GLuint>& indices, std::vector <Texture>& textures);
-    void Draw(Shader& shader, Camera& camera);
+    void Draw(Shader& shader, const Camera& camera);
     void SetTransform(const glm::vec3& translation, const glm::quat& rotation, const glm::vec3& scale);
 };
 

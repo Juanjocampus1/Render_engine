@@ -2,7 +2,7 @@
 
 UIManager::UIManager(LightManager& lightManager, MeshManager& meshManager, Scene& scene) : lightManager(lightManager), meshManager(meshManager), scene(scene), selectedObjectId(-1) {}
 
-void UIManager::Render() {
+void UIManager::Render(Camera& camera) {
     // Render the menu bar
     RenderMenuBar();
 
@@ -18,6 +18,10 @@ void UIManager::Render() {
 
     // Render the add menu
     RenderAddMenu();
+
+    // Draw lights
+    lightManager.DrawLights(camera);
+
 }
 
 void UIManager::RenderMenuBar() {
@@ -128,4 +132,3 @@ void UIManager::RenderAddMenu() {
         ImGui::EndPopup();
     }
 }
-

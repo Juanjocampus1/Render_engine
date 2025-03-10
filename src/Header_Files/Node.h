@@ -2,7 +2,8 @@
 #define NODE_H
 
 #include "Mesh.h"
-#include <memory>
+#include "ShaderClass.h"
+#include "Camera.h"
 
 class Node {
 public:
@@ -10,10 +11,11 @@ public:
     Node* leftChild;
     Node* rightChild;
     Mesh* mesh;
+    Shader* shader; // Añadir una referencia al shader
     glm::mat4 transform;
     int id;
 
-    Node(Mesh* mesh, const glm::mat4& transform = glm::mat4(1.0f));
+    Node(Mesh* mesh, Shader* shader, const glm::mat4& transform = glm::mat4(1.0f));
     ~Node();
 
     void AddChild(Node* child);
@@ -21,9 +23,12 @@ public:
     void RemoveNode(Node* nodeDelete);
 	Node* MinNode(Node*);
     void ReplaceNode(Node* node, Node* nodeReplace);
-	void DestroyNode(Node* nodeD);
+    void DestroyNode(Node* nodeD);
     void UpdateTransform(const glm::mat4& parentTransform = glm::mat4(1.0f));
-    void Draw(Shader& shader, Camera& camera);
+    void Draw(const Camera& camera);
 };
 
 #endif // NODE_H
+
+
+

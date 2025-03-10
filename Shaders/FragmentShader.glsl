@@ -22,41 +22,46 @@ uniform vec4 lightColor;
 uniform vec3 lightPos;
 // Gets the position of the camera from the main function
 uniform vec3 camPos;
+// Indicates if the object has textures
+uniform bool hasTexture;
 
 
-vec4 pointLight(){
 
-	// used in two variables so I calculate it here to not have to do it twice
-	vec3 lightVec = lightPos - crntPos;
+vec4 pointLight() {
+    // used in two variables so I calculate it here to not have to do it twice
+    vec3 lightVec = lightPos - crntPos;
 
-	// intensity of light with respect to distance
-	float dist = length(lightVec);
-	float a = 3.0;
-	float b = 0.7;
-	float inten = 1.0 / (a * dist * dist + b * dist + 1.0);
+    // intensity of light with respect to distance
+    float dist = length(lightVec);
+    float a = 3.0;
+    float b = 0.7;
+    float inten = 1.0 / (a * dist * dist + b * dist + 1.0);
 
-	// ambient lighting
-	float ambient = 0.20;
+    // ambient lighting
+    float ambient = 0.20;
 
-	// diffuse lighting
-	vec3 normal = normalize(Normal);
-	vec3 lightDirection = normalize(lightVec);
-	float diffuse = max(dot(normal, lightDirection), 0.0);
+    // diffuse lighting
+    vec3 normal = normalize(Normal);
+    vec3 lightDirection = normalize(lightVec);
+    float diffuse = max(dot(normal, lightDirection), 0.0);
 
-	// specular lighting
-	float specular = 0.0;
-	if (diffuse != 0.0){
-		float specularLight = 1.0;
-		vec3 viewDirection = normalize(camPos - crntPos);
-		vec3 reflectionDirection = reflect(-lightDirection, normal);
+    // specular lighting
+    float specular = 0.0;
+    if (diffuse != 0.0) {
+        float specularLight = 1.0;
+        vec3 viewDirection = normalize(camPos - crntPos);
+        vec3 reflectionDirection = reflect(-lightDirection, normal);
 
-		vec3 halfVector = normalize(lightDirection + viewDirection);
+        vec3 halfVector = normalize(lightDirection + viewDirection);
 
-		float specAmount = pow(max(dot(normal, halfVector), 0.0), 16);
-		float specular = specAmount * specularLight;
-	}
+        float specAmount = pow(max(dot(normal, halfVector), 0.0), 16);
+        specular = specAmount * specularLight;
+    }
 
-	return (texture(diffuse0, texCoord) * (diffuse * inten + ambient) + texture(specular0, texCoord).r * specular * inten) * lightColor;
+    vec4 baseColor = hasTexture ? texture(diffuse0, texCoord) : vec4(0.5, 0.5, 0.5, 1.0);
+    vec4 specularColor = hasTexture ? texture(specular0, texCoord) : vec4(1.0);
+
+    return (baseColor * (diffuse * inten + ambient) + specularColor.r * specular * inten) * lightColor;
 }
 
 vec4 direcLight()

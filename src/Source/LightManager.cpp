@@ -1,12 +1,12 @@
 #include "../Header_Files/LightManager.h"
 
-LightManager::LightManager(Scene& scene) : scene(scene), nextId(0) {}
+LightManager::LightManager(Scene& scene, Shader& lightShader) : scene(scene), lightShader(lightShader), nextId(0) {}
 
 void LightManager::AddLight(const glm::vec3& position, const glm::vec4& color, LightType type) {
     Light light;
     light.position = position;
     light.color = color;
-    light.model = glm::translate(glm::mat4(1.0f), position);
+    light.model = glm::translate(glm::mat4(0.0f), position);
     light.type = type;
     light.id = nextId++;
 
@@ -40,7 +40,7 @@ void LightManager::AddLight(const glm::vec3& position, const glm::vec4& color, L
     std::vector<Texture> lightTextures; // No necesitamos texturas para las luces
 
     light.mesh = new Mesh(lightVertices, lightIndices, lightTextures);
-    light.node = new Node(light.mesh);
+    light.node = new Node(light.mesh, &lightShader);
     light.node->transform = glm::translate(glm::mat4(1.0f), position);
     scene.AddNode(light.node);
 
@@ -70,6 +70,10 @@ void LightManager::UpdateLight(int id, const glm::vec3& position, const glm::vec
             light.model = glm::translate(glm::mat4(1.0f), position);
             light.type = type;
             light.node->transform = light.model;
+
+            lightShader.Activate();
+            glUniformMatrix4fv(glGetUniformLocation(lightShader.ID, "model"), 1, GL_FALSE, glm::value_ptr(light.model));
+            glUniform4f(glGetUniformLocation(lightShader.ID, "lightColor"), light.color.x, light.color.y, light.color.z, light.color.w);
             break;
         }
     }
@@ -99,3 +103,12 @@ std::vector<Light>& LightManager::GetLights() {
     return lights;
 }
 
+void LightManager::DrawLights(const Camera& camera) {
+    lightShader.Activate();
+    for (const auto& light : lights) {
+        lightShader.setMat4("model", light.node->transform);
+        lightShader.setMat4("camMatrix", camera.cameraMatrix);
+        lightShader.setVec4("lightColor", light.color);
+        light.mesh->Draw(lightShader, camera);
+    }
+}
