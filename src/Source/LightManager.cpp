@@ -1,14 +1,8 @@
 #include "../Header_Files/LightManager.h"
 
-LightManager::LightManager(Scene& scene, Shader& lightShader) : scene(scene), lightShader(lightShader), nextId(0) {}
+LightManager::LightManager(Scene& scene, Shader& lightShader) : scene(scene), lightShader(lightShader) {}
 
 void LightManager::AddLight(const glm::vec3& position, const glm::vec4& color, LightType type) {
-    Light light;
-    light.position = position;
-    light.color = color;
-    light.model = glm::translate(glm::mat4(1.0f), position);
-    light.type = type;
-    light.id = nextId++;
 
     // Crear una instancia de Mesh para la luz
     std::vector<Vertex> lightVertices = {
@@ -39,10 +33,19 @@ void LightManager::AddLight(const glm::vec3& position, const glm::vec4& color, L
 
     std::vector<Texture> lightTextures; // No necesitamos texturas para las luces
 
-    light.mesh = new Mesh(lightVertices, lightIndices, lightTextures);
-    light.node = new Node(light.mesh, &lightShader);
-    light.node->nodeInfo.data.transform = glm::translate(glm::mat4(1.0f), position);
-    scene.AddNode(light.node);
+    Mesh* lightMesh = new Mesh(lightVertices, lightIndices, lightTextures);
+    Node* lightNode = new Node(lightMesh, &lightShader);
+    lightNode->nodeInfo.data.transform = glm::translate(glm::mat4(1.0f), position);
+    scene.AddNode(lightNode);
+
+    Light light;
+    light.position = position;
+	light.id = lightNode->nodeInfo.data.id;
+    light.color = color;
+    light.model = glm::translate(glm::mat4(1.0f), position);
+    light.type = type;
+    light.mesh = lightMesh;
+    light.node = lightNode;
 
     lights.push_back(light);
 }
@@ -52,8 +55,8 @@ void LightManager::RemoveLight(int id) {
         return light.id == id;
         });
     if (it != lights.end()) {
-        if (it->node->nodeInfo.Parent) {
-            it->node->nodeInfo.Parent->RemoveChild(it->node);
+        if (it->node->nodeInfo.parent) {
+            it->node->nodeInfo.parent->RemoveChild(it->node);
         }
         else {
             scene.RemoveNode(it->node);
@@ -112,3 +115,4 @@ void LightManager::DrawLights(const Camera& camera) {
         light.mesh->Draw(lightShader, camera);
     }
 }
+

@@ -2,12 +2,12 @@
 #include <memory>
 #include <algorithm>
 
-static int nextNodeId = 0;
+int Node::globalId = 0; // Inicializar la variable estática global
 
 bool DecomposeTransform(const glm::mat4& transform, glm::vec3& translation, glm::quat& rotation, glm::vec3& scale);
 
 Node::Node(Mesh* mesh, Shader* shader, const glm::mat4& transform, int level)
-    : nodeInfo(nullptr, nullptr, {}, level, NodeData(mesh, shader, transform, nextNodeId++)) {
+    : nodeInfo(nullptr, {}, level, NodeData(mesh, shader, transform, globalId++)) {
 }
 
 Node::~Node() {
@@ -24,7 +24,7 @@ Node* Node::CreateNode(Mesh* mesh, Shader* shader, const glm::mat4& transform, i
 void Node::InsertNode(Node* parent, Node* child) {
     if (parent) {
         parent->nodeInfo.children.push_back(child);
-        child->nodeInfo.Parent = parent;
+        child->nodeInfo.parent = parent;
         child->nodeInfo.level = parent->nodeInfo.level + 1;
     }
 }
@@ -32,14 +32,14 @@ void Node::InsertNode(Node* parent, Node* child) {
 void Node::RemoveChild(Node* child) {
     auto it = std::find(nodeInfo.children.begin(), nodeInfo.children.end(), child);
     if (it != nodeInfo.children.end()) {
-        (*it)->nodeInfo.Parent = nullptr;
+        (*it)->nodeInfo.parent = nullptr;
         nodeInfo.children.erase(it);
     }
 }
 
 void Node::RemoveNode(Node* nodeDelete) {
-    if (nodeDelete->nodeInfo.Parent) {
-        nodeDelete->nodeInfo.Parent->RemoveChild(nodeDelete);
+    if (nodeDelete->nodeInfo.parent) {
+        nodeDelete->nodeInfo.parent->RemoveChild(nodeDelete);
     }
     DestroyNode(nodeDelete);
 }

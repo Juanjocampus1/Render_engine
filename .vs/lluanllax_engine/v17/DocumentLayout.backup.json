@@ -3,40 +3,40 @@
   "WorkspaceRootPath": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Source\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Header_Files\\Node.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Header_Files\\Node.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\node.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Source\\node.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\LightManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Source\\LightManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\MeshManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Source\\MeshManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Source\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\node.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Source\\node.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Header_Files\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Header_Files\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Header_Files\\Node.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Header_Files\\Node.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\UIManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Source\\UIManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\LightManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Source\\LightManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Header_Files\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Header_Files\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\UIManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Source\\UIManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Source\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Source\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 317,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,77 +58,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Main.cpp",
               "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Main.cpp",
               "RelativeDocumentMoniker": "src\\Main.cpp",
               "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Main.cpp",
               "RelativeToolTip": "src\\Main.cpp",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFIAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAFkAAAAAAAAAAAApwEkAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-10T17:25:44.233Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "LightManager.cpp",
               "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\LightManager.cpp",
               "RelativeDocumentMoniker": "src\\Source\\LightManager.cpp",
               "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\LightManager.cpp",
               "RelativeToolTip": "src\\Source\\LightManager.cpp",
-              "ViewState": "AgIAACgAAAAAAAAAAAAgwDwAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwCoAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-10T13:32:09.089Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MeshManager.cpp",
-              "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\MeshManager.cpp",
-              "RelativeDocumentMoniker": "src\\Source\\MeshManager.cpp",
-              "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\MeshManager.cpp",
-              "RelativeToolTip": "src\\Source\\MeshManager.cpp",
-              "ViewState": "AgIAACEAAAAAAAAAAAAQwDMAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-10T12:39:33.22Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "UIManager.cpp",
               "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\UIManager.cpp",
               "RelativeDocumentMoniker": "src\\Source\\UIManager.cpp",
               "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\UIManager.cpp",
               "RelativeToolTip": "src\\Source\\UIManager.cpp",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAHkAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-10T13:02:18.049Z"
+              "WhenOpened": "2025-03-10T13:02:18.049Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "Mesh.cpp",
               "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\Mesh.cpp",
               "RelativeDocumentMoniker": "src\\Source\\Mesh.cpp",
               "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\Mesh.cpp",
               "RelativeToolTip": "src\\Source\\Mesh.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-10T12:41:50.814Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Scene.h",
               "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Header_Files\\Scene.h",
               "RelativeDocumentMoniker": "src\\Header_Files\\Scene.h",
               "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Header_Files\\Scene.h",
               "RelativeToolTip": "src\\Header_Files\\Scene.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-10T10:22:15.305Z",
               "EditorCaption": ""
@@ -141,35 +129,54 @@
               "RelativeDocumentMoniker": "src\\Source\\node.cpp",
               "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\node.cpp",
               "RelativeToolTip": "src\\Source\\node.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-10T10:22:11.912Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Scene.cpp",
               "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\Scene.cpp",
               "RelativeDocumentMoniker": "src\\Source\\Scene.cpp",
               "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\Scene.cpp",
               "RelativeToolTip": "src\\Source\\Scene.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-10T10:22:10.832Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Node.h",
               "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Header_Files\\Node.h",
               "RelativeDocumentMoniker": "src\\Header_Files\\Node.h",
               "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Header_Files\\Node.h",
               "RelativeToolTip": "src\\Header_Files\\Node.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwC0AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-10T10:22:08.765Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 317,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MeshManager.cpp",
+              "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\MeshManager.cpp",
+              "RelativeDocumentMoniker": "src\\Source\\MeshManager.cpp",
+              "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\MeshManager.cpp",
+              "RelativeToolTip": "src\\Source\\MeshManager.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAgwCQAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-10T12:39:33.22Z",
               "EditorCaption": ""
             }
           ]

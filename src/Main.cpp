@@ -61,6 +61,7 @@ int main() {
 
     // Create a scene
     Scene scene;
+	scene.AddNode(Node::CreateNode(nullptr, nullptr, glm::mat4(1.0f), 0));
 
     // Create MeshManager and add a default cube to the scene
     MeshManager meshManager(scene);

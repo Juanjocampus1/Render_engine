@@ -34,7 +34,7 @@ void MeshManager::AddCube(const glm::vec3& position, const glm::vec3& scale, con
     scene.AddNode(cubeNode);
 
     MeshData meshData;
-    meshData.id = nextId++;
+    meshData.id = cubeNode->nodeInfo.data.id; // Usar el ID del nodo
     meshData.position = position;
     meshData.scale = scale;
     meshData.rotation = rotation;
@@ -49,8 +49,8 @@ void MeshManager::RemoveMesh(int id) {
         return mesh.id == id;
         });
     if (it != meshes.end()) {
-        if (it->node->nodeInfo.Parent) {
-            it->node->nodeInfo.Parent->RemoveChild(it->node);
+        if (it->node->nodeInfo.parent) {
+            it->node->nodeInfo.parent->RemoveChild(it->node);
         }
         else {
             scene.RemoveNode(it->node);
