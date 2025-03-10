@@ -6,7 +6,7 @@ void LightManager::AddLight(const glm::vec3& position, const glm::vec4& color, L
     Light light;
     light.position = position;
     light.color = color;
-    light.model = glm::translate(glm::mat4(0.0f), position);
+    light.model = glm::translate(glm::mat4(1.0f), position);
     light.type = type;
     light.id = nextId++;
 
@@ -41,7 +41,7 @@ void LightManager::AddLight(const glm::vec3& position, const glm::vec4& color, L
 
     light.mesh = new Mesh(lightVertices, lightIndices, lightTextures);
     light.node = new Node(light.mesh, &lightShader);
-    light.node->transform = glm::translate(glm::mat4(1.0f), position);
+    light.node->nodeInfo.data.transform = glm::translate(glm::mat4(1.0f), position);
     scene.AddNode(light.node);
 
     lights.push_back(light);
@@ -52,8 +52,8 @@ void LightManager::RemoveLight(int id) {
         return light.id == id;
         });
     if (it != lights.end()) {
-        if (it->node->parent) {
-            it->node->parent->RemoveChild(it->node);
+        if (it->node->nodeInfo.Parent) {
+            it->node->nodeInfo.Parent->RemoveChild(it->node);
         }
         else {
             scene.RemoveNode(it->node);
@@ -69,7 +69,7 @@ void LightManager::UpdateLight(int id, const glm::vec3& position, const glm::vec
             light.color = color;
             light.model = glm::translate(glm::mat4(1.0f), position);
             light.type = type;
-            light.node->transform = light.model;
+            light.node->nodeInfo.data.transform = light.model;
 
             lightShader.Activate();
             glUniformMatrix4fv(glGetUniformLocation(lightShader.ID, "model"), 1, GL_FALSE, glm::value_ptr(light.model));
@@ -84,7 +84,7 @@ void LightManager::UpdateLightPosition(int id, const glm::vec3& position) {
         if (light.id == id) {
             light.position = position;
             light.model = glm::translate(glm::mat4(1.0f), position);
-            light.node->transform = light.model;
+            light.node->nodeInfo.data.transform = light.model;
             break;
         }
     }
@@ -106,7 +106,7 @@ std::vector<Light>& LightManager::GetLights() {
 void LightManager::DrawLights(const Camera& camera) {
     lightShader.Activate();
     for (const auto& light : lights) {
-        lightShader.setMat4("model", light.node->transform);
+        lightShader.setMat4("model", light.node->nodeInfo.data.transform);
         lightShader.setMat4("camMatrix", camera.cameraMatrix);
         lightShader.setVec4("lightColor", light.color);
         light.mesh->Draw(lightShader, camera);

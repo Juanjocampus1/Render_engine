@@ -28,7 +28,7 @@ void MeshManager::AddCube(const glm::vec3& position, const glm::vec3& scale, con
     Mesh* cubeMesh = new Mesh(vertices, indices, textures);
     Shader* cubeShader = new Shader("Shaders/VertexShader.glsl", "Shaders/FragmentShader.glsl");
     Node* cubeNode = new Node(cubeMesh, cubeShader);
-    cubeNode->transform = glm::translate(glm::mat4(1.0f), position) *
+    cubeNode->nodeInfo.data.transform = glm::translate(glm::mat4(1.0f), position) *
         glm::mat4_cast(rotation) *
         glm::scale(glm::mat4(1.0f), scale);
     scene.AddNode(cubeNode);
@@ -49,8 +49,8 @@ void MeshManager::RemoveMesh(int id) {
         return mesh.id == id;
         });
     if (it != meshes.end()) {
-        if (it->node->parent) {
-            it->node->parent->RemoveChild(it->node);
+        if (it->node->nodeInfo.Parent) {
+            it->node->nodeInfo.Parent->RemoveChild(it->node);
         }
         else {
             scene.RemoveNode(it->node);
@@ -65,7 +65,7 @@ void MeshManager::UpdateMesh(int id, const glm::vec3& position, const glm::vec3&
             mesh.position = position;
             mesh.scale = scale;
             mesh.rotation = rotation;
-            mesh.node->transform = glm::translate(glm::mat4(1.0f), position) *
+            mesh.node->nodeInfo.data.transform = glm::translate(glm::mat4(1.0f), position) *
                 glm::mat4_cast(rotation) *
                 glm::scale(glm::mat4(1.0f), scale);
             break;

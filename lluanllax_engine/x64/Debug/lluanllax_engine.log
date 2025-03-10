@@ -1,504 +1,182 @@
-﻿  Mesh.h
-  Main.cpp
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(8,9): error C2143: error de sintaxis: falta ';' delante de '*'
+﻿  Main.cpp
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(7,9): error C2143: error de sintaxis: falta ';' delante de '*'
   (compilando archivo de origen "src/Main.cpp")
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(8,5): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(7,5): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
   (compilando archivo de origen "src/Main.cpp")
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(8,17): error C2238: símbolos (token) inesperados delante de ';'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(7,17): error C2238: símbolos (token) inesperados delante de ';'
   (compilando archivo de origen "src/Main.cpp")
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(9,21): error C2065: 'Node': identificador no declarado
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(8,17): error C2065: 'Node': identificador no declarado
   (compilando archivo de origen "src/Main.cpp")
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(9,10): error C2923: 'std::unique_ptr': 'Node' no es un argumento de tipo plantilla válido para el parámetro '_Ty'
-  (compilando archivo de origen "src/Main.cpp")
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(9,21):
-      vea la declaración de 'Node'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(9,10): error C2976: "std::unique_ptr": no hay suficientes argumentos de plantilla
-  (compilando archivo de origen "src/Main.cpp")
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3335,7):
-      vea la declaración de 'std::unique_ptr'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(10,21): error C2065: 'Node': identificador no declarado
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(8,22): error C2059: error de sintaxis: '>'
   (compilando archivo de origen "src/Main.cpp")
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(10,10): error C2923: 'std::unique_ptr': 'Node' no es un argumento de tipo plantilla válido para el parámetro '_Ty'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(15,14): error C2061: error de sintaxis: identificador 'Node'
   (compilando archivo de origen "src/Main.cpp")
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(10,21):
-      vea la declaración de 'Node'
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(10,10): error C2976: "std::unique_ptr": no hay suficientes argumentos de plantilla
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(16,18): error C2065: 'parent': identificador no declarado
   (compilando archivo de origen "src/Main.cpp")
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3335,7):
-      vea la declaración de 'std::unique_ptr'
   
-  MeshManager.cpp
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(8,9): error C2143: error de sintaxis: falta ';' delante de '*'
-  (compilando archivo de origen "src/Source/MeshManager.cpp")
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(16,11): error C2614: 'NodeData': inicialización de miembro no válida: 'parent' no es una base o miembro
+  (compilando archivo de origen "src/Main.cpp")
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(8,5): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-  (compilando archivo de origen "src/Source/MeshManager.cpp")
+  LightManager.cpp
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(7,9): error C2143: error de sintaxis: falta ';' delante de '*'
+  (compilando archivo de origen "src/Source/LightManager.cpp")
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(8,17): error C2238: símbolos (token) inesperados delante de ';'
-  (compilando archivo de origen "src/Source/MeshManager.cpp")
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(7,5): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+  (compilando archivo de origen "src/Source/LightManager.cpp")
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(9,21): error C2065: 'Node': identificador no declarado
-  (compilando archivo de origen "src/Source/MeshManager.cpp")
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(7,17): error C2238: símbolos (token) inesperados delante de ';'
+  (compilando archivo de origen "src/Source/LightManager.cpp")
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(9,10): error C2923: 'std::unique_ptr': 'Node' no es un argumento de tipo plantilla válido para el parámetro '_Ty'
-  (compilando archivo de origen "src/Source/MeshManager.cpp")
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(9,21):
-      vea la declaración de 'Node'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(8,17): error C2065: 'Node': identificador no declarado
+  (compilando archivo de origen "src/Source/LightManager.cpp")
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(9,10): error C2976: "std::unique_ptr": no hay suficientes argumentos de plantilla
-  (compilando archivo de origen "src/Source/MeshManager.cpp")
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3335,7):
-      vea la declaración de 'std::unique_ptr'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(8,22): error C2059: error de sintaxis: '>'
+  (compilando archivo de origen "src/Source/LightManager.cpp")
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(10,21): error C2065: 'Node': identificador no declarado
-  (compilando archivo de origen "src/Source/MeshManager.cpp")
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(15,14): error C2061: error de sintaxis: identificador 'Node'
+  (compilando archivo de origen "src/Source/LightManager.cpp")
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(10,10): error C2923: 'std::unique_ptr': 'Node' no es un argumento de tipo plantilla válido para el parámetro '_Ty'
-  (compilando archivo de origen "src/Source/MeshManager.cpp")
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(10,21):
-      vea la declaración de 'Node'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(16,18): error C2065: 'parent': identificador no declarado
+  (compilando archivo de origen "src/Source/LightManager.cpp")
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(10,10): error C2976: "std::unique_ptr": no hay suficientes argumentos de plantilla
-  (compilando archivo de origen "src/Source/MeshManager.cpp")
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3335,7):
-      vea la declaración de 'std::unique_ptr'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(16,11): error C2614: 'NodeData': inicialización de miembro no válida: 'parent' no es una base o miembro
+  (compilando archivo de origen "src/Source/LightManager.cpp")
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\MeshManager.cpp(51,28): error C2039: "parent": no es un miembro de "NodeData"
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(7,8):
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\LightManager.cpp(55,28): error C2039: "parent": no es un miembro de "NodeData"
+      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(6,8):
       vea la declaración de 'NodeData'
   
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\LightManager.cpp(56,28): error C2039: "parent": no es un miembro de "NodeData"
+      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(6,8):
+      vea la declaración de 'NodeData'
+  
+  MeshManager.cpp
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(7,9): error C2143: error de sintaxis: falta ';' delante de '*'
+  (compilando archivo de origen "src/Source/MeshManager.cpp")
+  
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(7,5): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+  (compilando archivo de origen "src/Source/MeshManager.cpp")
+  
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(7,17): error C2238: símbolos (token) inesperados delante de ';'
+  (compilando archivo de origen "src/Source/MeshManager.cpp")
+  
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(8,17): error C2065: 'Node': identificador no declarado
+  (compilando archivo de origen "src/Source/MeshManager.cpp")
+  
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(8,22): error C2059: error de sintaxis: '>'
+  (compilando archivo de origen "src/Source/MeshManager.cpp")
+  
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(15,14): error C2061: error de sintaxis: identificador 'Node'
+  (compilando archivo de origen "src/Source/MeshManager.cpp")
+  
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(16,18): error C2065: 'parent': identificador no declarado
+  (compilando archivo de origen "src/Source/MeshManager.cpp")
+  
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(16,11): error C2614: 'NodeData': inicialización de miembro no válida: 'parent' no es una base o miembro
+  (compilando archivo de origen "src/Source/MeshManager.cpp")
+  
 E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\MeshManager.cpp(52,28): error C2039: "parent": no es un miembro de "NodeData"
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(7,8):
+      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(6,8):
+      vea la declaración de 'NodeData'
+  
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\MeshManager.cpp(53,28): error C2039: "parent": no es un miembro de "NodeData"
+      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(6,8):
       vea la declaración de 'NodeData'
   
   node.cpp
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(8,9): error C2143: error de sintaxis: falta ';' delante de '*'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(7,9): error C2143: error de sintaxis: falta ';' delante de '*'
   (compilando archivo de origen "src/Source/node.cpp")
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(8,5): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(7,5): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
   (compilando archivo de origen "src/Source/node.cpp")
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(8,17): error C2238: símbolos (token) inesperados delante de ';'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(7,17): error C2238: símbolos (token) inesperados delante de ';'
   (compilando archivo de origen "src/Source/node.cpp")
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(9,21): error C2065: 'Node': identificador no declarado
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(8,17): error C2065: 'Node': identificador no declarado
   (compilando archivo de origen "src/Source/node.cpp")
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(9,10): error C2923: 'std::unique_ptr': 'Node' no es un argumento de tipo plantilla válido para el parámetro '_Ty'
-  (compilando archivo de origen "src/Source/node.cpp")
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(9,21):
-      vea la declaración de 'Node'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(9,10): error C2976: "std::unique_ptr": no hay suficientes argumentos de plantilla
-  (compilando archivo de origen "src/Source/node.cpp")
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3335,7):
-      vea la declaración de 'std::unique_ptr'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(10,21): error C2065: 'Node': identificador no declarado
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(8,22): error C2059: error de sintaxis: '>'
   (compilando archivo de origen "src/Source/node.cpp")
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(10,10): error C2923: 'std::unique_ptr': 'Node' no es un argumento de tipo plantilla válido para el parámetro '_Ty'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(15,14): error C2061: error de sintaxis: identificador 'Node'
   (compilando archivo de origen "src/Source/node.cpp")
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(10,21):
-      vea la declaración de 'Node'
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(10,10): error C2976: "std::unique_ptr": no hay suficientes argumentos de plantilla
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(16,18): error C2065: 'parent': identificador no declarado
   (compilando archivo de origen "src/Source/node.cpp")
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3335,7):
-      vea la declaración de 'std::unique_ptr'
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(7,10): error C2039: "parent": no es un miembro de "NodeData"
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(7,8):
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(16,11): error C2614: 'NodeData': inicialización de miembro no válida: 'parent' no es una base o miembro
+  (compilando archivo de origen "src/Source/node.cpp")
+  
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(10,11): error C2661: 'NodeData::NodeData': ninguna función sobrecargada acepta 6 argumentos
+      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(10,11):
+      al hacer coincidir la lista de argumentos '(nullptr, Mesh *, Shader *, const glm::mat4, int, int)'
+  
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(14,28): error C3312: no se encontró ninguna función 'begin' invocable para el tipo 'unknown-type'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(14,28): error C3312: no se encontró ninguna función 'end' invocable para el tipo 'unknown-type'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(14,22): error C2143: error de sintaxis: falta ';' delante de ':'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(14,37): error C2143: error de sintaxis: falta ';' delante de ')'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(27,21): error C2039: "parent": no es un miembro de "NodeData"
+      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(6,8):
       vea la declaración de 'NodeData'
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(8,9): error C2678: '=' binario: no se encontró un operador que adopte un operando en la parte izquierda de tipo 'std::unique_ptr' (o bien no existe una conversión aceptable)
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3452,17):
-      puede ser 'std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(const std::unique_ptr<_Ty,_Dx> &)'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(8,9):
-          'std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(const std::unique_ptr<_Ty,_Dx> &)': no se puede convertir el puntero 'this' de 'std::unique_ptr' a 'std::unique_ptr<_Ty,_Dx> &'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(8,9):
-              Razón: no se puede realizar la conversión de 'std::unique_ptr' a 'std::unique_ptr<_Ty,_Dx>'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(8,9):
-              La conversión requiere un segundo operador de conversión definido por el usuario o constructor
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3347,30):
-      o       'std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(std::nullptr_t) noexcept'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(8,9):
-          'std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(std::nullptr_t) noexcept': no se puede convertir el puntero 'this' de 'std::unique_ptr' a 'std::unique_ptr<_Ty,_Dx> &'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(8,9):
-              Razón: no se puede realizar la conversión de 'std::unique_ptr' a 'std::unique_ptr<_Ty,_Dx>'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(8,9):
-              La conversión requiere un segundo operador de conversión definido por el usuario o constructor
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3398,30):
-      o       'std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(std::unique_ptr<_Ty,_Dx> &&) noexcept'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(8,9):
-          "std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(std::unique_ptr<_Ty,_Dx> &&) noexcept": no se pudo deducir el argumento plantilla para "std::unique_ptr<_Ty,_Dx> &&" de "nullptr"
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3391,30):
-      o       'std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(std::unique_ptr<_Ux,_Dx> &&) noexcept'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(8,9):
-          "std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(std::unique_ptr<_Ux,_Dx> &&) noexcept": no se pudo deducir el argumento plantilla para "std::unique_ptr<_Ux,_Dx> &&" de "nullptr"
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(8,9):
-      al hacer coincidir la lista de argumentos '(std::unique_ptr, nullptr)'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(33,20): error C2672: 'std::find': no se encontró una función sobrecargada que coincida
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(6185,31):
+      puede ser '_InIt std::find(_InIt,const _InIt,const _Ty &)'
+          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(33,20):
+          "_InIt std::find(_InIt,const _InIt,const _Ty &)": espera 3 argumentos - 2 proporcionado
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(8,20): error C2582: La función 'operator =' no está disponible en 'std::unique_ptr'
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(9,9): error C2678: '=' binario: no se encontró un operador que adopte un operando en la parte izquierda de tipo 'std::unique_ptr' (o bien no existe una conversión aceptable)
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3452,17):
-      puede ser 'std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(const std::unique_ptr<_Ty,_Dx> &)'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(9,9):
-          'std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(const std::unique_ptr<_Ty,_Dx> &)': no se puede convertir el puntero 'this' de 'std::unique_ptr' a 'std::unique_ptr<_Ty,_Dx> &'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(9,9):
-              Razón: no se puede realizar la conversión de 'std::unique_ptr' a 'std::unique_ptr<_Ty,_Dx>'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(9,9):
-              La conversión requiere un segundo operador de conversión definido por el usuario o constructor
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3347,30):
-      o       'std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(std::nullptr_t) noexcept'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(9,9):
-          'std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(std::nullptr_t) noexcept': no se puede convertir el puntero 'this' de 'std::unique_ptr' a 'std::unique_ptr<_Ty,_Dx> &'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(9,9):
-              Razón: no se puede realizar la conversión de 'std::unique_ptr' a 'std::unique_ptr<_Ty,_Dx>'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(9,9):
-              La conversión requiere un segundo operador de conversión definido por el usuario o constructor
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3398,30):
-      o       'std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(std::unique_ptr<_Ty,_Dx> &&) noexcept'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(9,9):
-          "std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(std::unique_ptr<_Ty,_Dx> &&) noexcept": no se pudo deducir el argumento plantilla para "std::unique_ptr<_Ty,_Dx> &&" de "nullptr"
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3391,30):
-      o       'std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(std::unique_ptr<_Ux,_Dx> &&) noexcept'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(9,9):
-          "std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(std::unique_ptr<_Ux,_Dx> &&) noexcept": no se pudo deducir el argumento plantilla para "std::unique_ptr<_Ux,_Dx> &&" de "nullptr"
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(9,9):
-      al hacer coincidir la lista de argumentos '(std::unique_ptr, nullptr)'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(9,21): error C2582: La función 'operator =' no está disponible en 'std::unique_ptr'
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(24,14): error C2678: '!' binario: no se encontró un operador que adopte un operando en la parte izquierda de tipo 'std::unique_ptr' (o bien no existe una conversión aceptable)
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(24,14):
-      puede ser 'built-in C++ operator!(bool)'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(24,14):
-          '!': el argumento 1 no puede convertirse de 'std::unique_ptr' a 'bool'
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(24,14):
-      al hacer coincidir la lista de argumentos '(std::unique_ptr)'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(24,9): error C2088: el operador integrado '!' no se puede aplicar a un operando de tipo 'std::unique_ptr'
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(25,13): error C2678: '=' binario: no se encontró un operador que adopte un operando en la parte izquierda de tipo 'std::unique_ptr' (o bien no existe una conversión aceptable)
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3452,17):
-      puede ser 'std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(const std::unique_ptr<_Ty,_Dx> &)'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(25,13):
-          'std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(const std::unique_ptr<_Ty,_Dx> &)': no se puede convertir el puntero 'this' de 'std::unique_ptr' a 'std::unique_ptr<_Ty,_Dx> &'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(25,13):
-              Razón: no se puede realizar la conversión de 'std::unique_ptr' a 'std::unique_ptr<_Ty,_Dx>'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(25,13):
-              La conversión requiere un segundo operador de conversión definido por el usuario o constructor
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3347,30):
-      o       'std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(std::nullptr_t) noexcept'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(25,13):
-          'std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(std::nullptr_t) noexcept': no se puede convertir el puntero 'this' de 'std::unique_ptr' a 'std::unique_ptr<_Ty,_Dx> &'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(25,13):
-              Razón: no se puede realizar la conversión de 'std::unique_ptr' a 'std::unique_ptr<_Ty,_Dx>'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(25,13):
-              La conversión requiere un segundo operador de conversión definido por el usuario o constructor
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3398,30):
-      o       'std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(std::unique_ptr<_Ty,_Dx> &&) noexcept'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(25,13):
-          "std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(std::unique_ptr<_Ty,_Dx> &&) noexcept": no se pudo deducir el argumento plantilla para "__formal"
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3391,30):
-      o       'std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(std::unique_ptr<_Ux,_Dx> &&) noexcept'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(25,13):
-          "std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(std::unique_ptr<_Ux,_Dx> &&) noexcept": no se pudo deducir el argumento plantilla para "__formal"
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(25,13):
-      al hacer coincidir la lista de argumentos '(std::unique_ptr, std::unique_ptr<Node,std::default_delete<Node>>)'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(25,24): error C2582: La función 'operator =' no está disponible en 'std::unique_ptr'
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(27,19): error C2678: '!' binario: no se encontró un operador que adopte un operando en la parte izquierda de tipo 'std::unique_ptr' (o bien no existe una conversión aceptable)
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(27,19):
-      puede ser 'built-in C++ operator!(bool)'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(27,19):
-          '!': el argumento 1 no puede convertirse de 'std::unique_ptr' a 'bool'
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(27,19):
-      al hacer coincidir la lista de argumentos '(std::unique_ptr)'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(27,14): error C2088: el operador integrado '!' no se puede aplicar a un operando de tipo 'std::unique_ptr'
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(28,13): error C2678: '=' binario: no se encontró un operador que adopte un operando en la parte izquierda de tipo 'std::unique_ptr' (o bien no existe una conversión aceptable)
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3452,17):
-      puede ser 'std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(const std::unique_ptr<_Ty,_Dx> &)'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(28,13):
-          'std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(const std::unique_ptr<_Ty,_Dx> &)': no se puede convertir el puntero 'this' de 'std::unique_ptr' a 'std::unique_ptr<_Ty,_Dx> &'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(28,13):
-              Razón: no se puede realizar la conversión de 'std::unique_ptr' a 'std::unique_ptr<_Ty,_Dx>'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(28,13):
-              La conversión requiere un segundo operador de conversión definido por el usuario o constructor
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3347,30):
-      o       'std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(std::nullptr_t) noexcept'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(28,13):
-          'std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(std::nullptr_t) noexcept': no se puede convertir el puntero 'this' de 'std::unique_ptr' a 'std::unique_ptr<_Ty,_Dx> &'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(28,13):
-              Razón: no se puede realizar la conversión de 'std::unique_ptr' a 'std::unique_ptr<_Ty,_Dx>'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(28,13):
-              La conversión requiere un segundo operador de conversión definido por el usuario o constructor
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3398,30):
-      o       'std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(std::unique_ptr<_Ty,_Dx> &&) noexcept'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(28,13):
-          "std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(std::unique_ptr<_Ty,_Dx> &&) noexcept": no se pudo deducir el argumento plantilla para "__formal"
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3391,30):
-      o       'std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(std::unique_ptr<_Ux,_Dx> &&) noexcept'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(28,13):
-          "std::unique_ptr<_Ty,_Dx> &std::unique_ptr<_Ty,_Dx>::operator =(std::unique_ptr<_Ux,_Dx> &&) noexcept": no se pudo deducir el argumento plantilla para "__formal"
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(28,13):
-      al hacer coincidir la lista de argumentos '(std::unique_ptr, std::unique_ptr<Node,std::default_delete<Node>>)'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(28,25): error C2582: La función 'operator =' no está disponible en 'std::unique_ptr'
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(32,13): error C2678: '->' binario: no se encontró un operador que adopte un operando en la parte izquierda de tipo 'std::unique_ptr' (o bien no existe una conversión aceptable)
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3428,37):
-      puede ser '_Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(32,13):
-          '_Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const': no se puede convertir el puntero 'this' de 'std::unique_ptr' a 'const std::unique_ptr<_Ty,_Dx> &'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(32,13):
-              Razón: no se puede realizar la conversión de 'std::unique_ptr' a 'const std::unique_ptr<_Ty,_Dx>'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(32,13):
-              La conversión requiere un segundo operador de conversión definido por el usuario o constructor
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(32,13):
-      al hacer coincidir la lista de argumentos '(std::unique_ptr)'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(32,25): error C2039: "InsertChild": no es un miembro de "std::unique_ptr"
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3335,7):
-      vea la declaración de 'std::unique_ptr'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(34,17): error C2039: "parent": no es un miembro de "NodeData"
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(7,8):
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(34,9): error C3536: 'it': no se puede usar antes de inicializarse
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(35,10): error C2100: no se puede desreferenciar un operando de tipo 'int'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(41,26): error C2039: "parent": no es un miembro de "NodeData"
+      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(6,8):
       vea la declaración de 'NodeData'
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(38,24): error C2662: '_Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::get(void) noexcept const': no se puede convertir el puntero 'this' de 'std::unique_ptr' a 'const std::unique_ptr<_Ty,_Dx> &'
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(38,13):
-      Razón: no se puede realizar la conversión de 'std::unique_ptr' a 'const std::unique_ptr<_Ty,_Dx>'
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(38,13):
-      La conversión requiere un segundo operador de conversión definido por el usuario o constructor
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3432,37):
-      vea la declaración de 'std::unique_ptr<_Ty,_Dx>::get'
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(38,24):
-      al hacer coincidir la lista de argumentos '()'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(42,26): error C2039: "parent": no es un miembro de "NodeData"
+      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(6,8):
+      vea la declaración de 'NodeData'
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(39,13): error C2678: '->' binario: no se encontró un operador que adopte un operando en la parte izquierda de tipo 'std::unique_ptr' (o bien no existe una conversión aceptable)
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3428,37):
-      puede ser '_Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(39,13):
-          '_Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const': no se puede convertir el puntero 'this' de 'std::unique_ptr' a 'const std::unique_ptr<_Ty,_Dx> &'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(39,13):
-              Razón: no se puede realizar la conversión de 'std::unique_ptr' a 'const std::unique_ptr<_Ty,_Dx>'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(39,13):
-              La conversión requiere un segundo operador de conversión definido por el usuario o constructor
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(39,13):
-      al hacer coincidir la lista de argumentos '(std::unique_ptr)'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(39,25): error C2039: "data": no es un miembro de "std::unique_ptr"
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3335,7):
-      vea la declaración de 'std::unique_ptr'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(40,24): error C2662: 'void std::unique_ptr<_Ty,_Dx>::reset(_Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type) noexcept': no se puede convertir el puntero 'this' de 'std::unique_ptr' a 'std::unique_ptr<_Ty,_Dx> &'
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(40,13):
-      Razón: no se puede realizar la conversión de 'std::unique_ptr' a 'std::unique_ptr<_Ty,_Dx>'
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(40,13):
-      La conversión requiere un segundo operador de conversión definido por el usuario o constructor
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3444,23):
-      vea la declaración de 'std::unique_ptr<_Ty,_Dx>::reset'
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(40,24):
-      al hacer coincidir la lista de argumentos '()'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(42,30): error C2662: '_Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::get(void) noexcept const': no se puede convertir el puntero 'this' de 'std::unique_ptr' a 'const std::unique_ptr<_Ty,_Dx> &'
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(42,18):
-      Razón: no se puede realizar la conversión de 'std::unique_ptr' a 'const std::unique_ptr<_Ty,_Dx>'
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(42,18):
-      La conversión requiere un segundo operador de conversión definido por el usuario o constructor
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3432,37):
-      vea la declaración de 'std::unique_ptr<_Ty,_Dx>::get'
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(42,30):
-      al hacer coincidir la lista de argumentos '()'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(43,13): error C2678: '->' binario: no se encontró un operador que adopte un operando en la parte izquierda de tipo 'std::unique_ptr' (o bien no existe una conversión aceptable)
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3428,37):
-      puede ser '_Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(43,13):
-          '_Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const': no se puede convertir el puntero 'this' de 'std::unique_ptr' a 'const std::unique_ptr<_Ty,_Dx> &'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(43,13):
-              Razón: no se puede realizar la conversión de 'std::unique_ptr' a 'const std::unique_ptr<_Ty,_Dx>'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(43,13):
-              La conversión requiere un segundo operador de conversión definido por el usuario o constructor
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(43,13):
-      al hacer coincidir la lista de argumentos '(std::unique_ptr)'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(43,26): error C2039: "data": no es un miembro de "std::unique_ptr"
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3335,7):
-      vea la declaración de 'std::unique_ptr'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(44,25): error C2662: 'void std::unique_ptr<_Ty,_Dx>::reset(_Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type) noexcept': no se puede convertir el puntero 'this' de 'std::unique_ptr' a 'std::unique_ptr<_Ty,_Dx> &'
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(44,13):
-      Razón: no se puede realizar la conversión de 'std::unique_ptr' a 'std::unique_ptr<_Ty,_Dx>'
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(44,13):
-      La conversión requiere un segundo operador de conversión definido por el usuario o constructor
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3444,23):
-      vea la declaración de 'std::unique_ptr<_Ty,_Dx>::reset'
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(44,25):
-      al hacer coincidir la lista de argumentos '()'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(47,17): error C2451: una expresión condicional de tipo "std::unique_ptr" no es válida
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(47,17):
-      No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(47,33): error C2678: '->' binario: no se encontró un operador que adopte un operando en la parte izquierda de tipo 'std::unique_ptr' (o bien no existe una conversión aceptable)
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3428,37):
-      puede ser '_Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(47,33):
-          '_Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const': no se puede convertir el puntero 'this' de 'std::unique_ptr' a 'const std::unique_ptr<_Ty,_Dx> &'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(47,33):
-              Razón: no se puede realizar la conversión de 'std::unique_ptr' a 'const std::unique_ptr<_Ty,_Dx>'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(47,33):
-              La conversión requiere un segundo operador de conversión definido por el usuario o constructor
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(47,33):
-      al hacer coincidir la lista de argumentos '(std::unique_ptr)'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(47,45): error C2039: "RemoveChild": no es un miembro de "std::unique_ptr"
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3335,7):
-      vea la declaración de 'std::unique_ptr'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(48,17): error C2451: una expresión condicional de tipo "std::unique_ptr" no es válida
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(48,17):
-      No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(48,34): error C2678: '->' binario: no se encontró un operador que adopte un operando en la parte izquierda de tipo 'std::unique_ptr' (o bien no existe una conversión aceptable)
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3428,37):
-      puede ser '_Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(48,34):
-          '_Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const': no se puede convertir el puntero 'this' de 'std::unique_ptr' a 'const std::unique_ptr<_Ty,_Dx> &'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(48,34):
-              Razón: no se puede realizar la conversión de 'std::unique_ptr' a 'const std::unique_ptr<_Ty,_Dx>'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(48,34):
-              La conversión requiere un segundo operador de conversión definido por el usuario o constructor
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(48,34):
-      al hacer coincidir la lista de argumentos '(std::unique_ptr)'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(48,47): error C2039: "RemoveChild": no es un miembro de "std::unique_ptr"
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3335,7):
-      vea la declaración de 'std::unique_ptr'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(84,13): error C2451: una expresión condicional de tipo "std::unique_ptr" no es válida
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(84,13):
-      No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(84,29): error C2678: '->' binario: no se encontró un operador que adopte un operando en la parte izquierda de tipo 'std::unique_ptr' (o bien no existe una conversión aceptable)
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3428,37):
-      puede ser '_Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(84,29):
-          '_Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const': no se puede convertir el puntero 'this' de 'std::unique_ptr' a 'const std::unique_ptr<_Ty,_Dx> &'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(84,29):
-              Razón: no se puede realizar la conversión de 'std::unique_ptr' a 'const std::unique_ptr<_Ty,_Dx>'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(84,29):
-              La conversión requiere un segundo operador de conversión definido por el usuario o constructor
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(84,29):
-      al hacer coincidir la lista de argumentos '(std::unique_ptr)'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(84,41): error C2039: "UpdateTransform": no es un miembro de "std::unique_ptr"
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3335,7):
-      vea la declaración de 'std::unique_ptr'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(85,13): error C2451: una expresión condicional de tipo "std::unique_ptr" no es válida
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(85,13):
-      No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(85,30): error C2678: '->' binario: no se encontró un operador que adopte un operando en la parte izquierda de tipo 'std::unique_ptr' (o bien no existe una conversión aceptable)
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3428,37):
-      puede ser '_Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(85,30):
-          '_Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const': no se puede convertir el puntero 'this' de 'std::unique_ptr' a 'const std::unique_ptr<_Ty,_Dx> &'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(85,30):
-              Razón: no se puede realizar la conversión de 'std::unique_ptr' a 'const std::unique_ptr<_Ty,_Dx>'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(85,30):
-              La conversión requiere un segundo operador de conversión definido por el usuario o constructor
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(85,30):
-      al hacer coincidir la lista de argumentos '(std::unique_ptr)'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(85,43): error C2039: "UpdateTransform": no es un miembro de "std::unique_ptr"
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3335,7):
-      vea la declaración de 'std::unique_ptr'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(92,13): error C2451: una expresión condicional de tipo "std::unique_ptr" no es válida
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(92,13):
-      No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(92,29): error C2678: '->' binario: no se encontró un operador que adopte un operando en la parte izquierda de tipo 'std::unique_ptr' (o bien no existe una conversión aceptable)
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3428,37):
-      puede ser '_Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(92,29):
-          '_Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const': no se puede convertir el puntero 'this' de 'std::unique_ptr' a 'const std::unique_ptr<_Ty,_Dx> &'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(92,29):
-              Razón: no se puede realizar la conversión de 'std::unique_ptr' a 'const std::unique_ptr<_Ty,_Dx>'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(92,29):
-              La conversión requiere un segundo operador de conversión definido por el usuario o constructor
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(92,29):
-      al hacer coincidir la lista de argumentos '(std::unique_ptr)'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(92,41): error C2039: "Draw": no es un miembro de "std::unique_ptr"
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3335,7):
-      vea la declaración de 'std::unique_ptr'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(93,13): error C2451: una expresión condicional de tipo "std::unique_ptr" no es válida
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(93,13):
-      No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(93,30): error C2678: '->' binario: no se encontró un operador que adopte un operando en la parte izquierda de tipo 'std::unique_ptr' (o bien no existe una conversión aceptable)
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3428,37):
-      puede ser '_Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const'
-          E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(93,30):
-          '_Get_deleter_pointer_type<_Ty,remove_reference<_Ty1>::type,void>::type std::unique_ptr<_Ty,_Dx>::operator ->(void) noexcept const': no se puede convertir el puntero 'this' de 'std::unique_ptr' a 'const std::unique_ptr<_Ty,_Dx> &'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(93,30):
-              Razón: no se puede realizar la conversión de 'std::unique_ptr' a 'const std::unique_ptr<_Ty,_Dx>'
-              E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(93,30):
-              La conversión requiere un segundo operador de conversión definido por el usuario o constructor
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(93,30):
-      al hacer coincidir la lista de argumentos '(std::unique_ptr)'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(93,43): error C2039: "Draw": no es un miembro de "std::unique_ptr"
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3335,7):
-      vea la declaración de 'std::unique_ptr'
-  
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(48,35): error C3312: no se encontró ninguna función 'begin' invocable para el tipo 'unknown-type'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(48,35): error C3312: no se encontró ninguna función 'end' invocable para el tipo 'unknown-type'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(48,22): error C2143: error de sintaxis: falta ';' delante de ':'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(48,44): error C2143: error de sintaxis: falta ';' delante de ')'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(65,28): error C3312: no se encontró ninguna función 'begin' invocable para el tipo 'unknown-type'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(65,28): error C3312: no se encontró ninguna función 'end' invocable para el tipo 'unknown-type'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(65,22): error C2143: error de sintaxis: falta ';' delante de ':'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(65,37): error C2143: error de sintaxis: falta ';' delante de ')'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(75,28): error C3312: no se encontró ninguna función 'begin' invocable para el tipo 'unknown-type'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(75,28): error C3312: no se encontró ninguna función 'end' invocable para el tipo 'unknown-type'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(75,22): error C2143: error de sintaxis: falta ';' delante de ':'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Source\node.cpp(75,37): error C2143: error de sintaxis: falta ';' delante de ')'
   Scene.cpp
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(8,9): error C2143: error de sintaxis: falta ';' delante de '*'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(7,9): error C2143: error de sintaxis: falta ';' delante de '*'
   (compilando archivo de origen "src/Source/Scene.cpp")
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(8,5): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(7,5): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
   (compilando archivo de origen "src/Source/Scene.cpp")
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(8,17): error C2238: símbolos (token) inesperados delante de ';'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(7,17): error C2238: símbolos (token) inesperados delante de ';'
   (compilando archivo de origen "src/Source/Scene.cpp")
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(9,21): error C2065: 'Node': identificador no declarado
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(8,17): error C2065: 'Node': identificador no declarado
   (compilando archivo de origen "src/Source/Scene.cpp")
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(9,10): error C2923: 'std::unique_ptr': 'Node' no es un argumento de tipo plantilla válido para el parámetro '_Ty'
-  (compilando archivo de origen "src/Source/Scene.cpp")
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(9,21):
-      vea la declaración de 'Node'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(9,10): error C2976: "std::unique_ptr": no hay suficientes argumentos de plantilla
-  (compilando archivo de origen "src/Source/Scene.cpp")
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3335,7):
-      vea la declaración de 'std::unique_ptr'
-  
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(10,21): error C2065: 'Node': identificador no declarado
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(8,22): error C2059: error de sintaxis: '>'
   (compilando archivo de origen "src/Source/Scene.cpp")
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(10,10): error C2923: 'std::unique_ptr': 'Node' no es un argumento de tipo plantilla válido para el parámetro '_Ty'
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(15,14): error C2061: error de sintaxis: identificador 'Node'
   (compilando archivo de origen "src/Source/Scene.cpp")
-      E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(10,21):
-      vea la declaración de 'Node'
   
-E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(10,10): error C2976: "std::unique_ptr": no hay suficientes argumentos de plantilla
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(16,18): error C2065: 'parent': identificador no declarado
   (compilando archivo de origen "src/Source/Scene.cpp")
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(3335,7):
-      vea la declaración de 'std::unique_ptr'
+  
+E:\deberes\2º DE DAM\lluanllax_engine\git_versions\Render_engine\src\Header_Files\Node.h(16,11): error C2614: 'NodeData': inicialización de miembro no válida: 'parent' no es una base o miembro
+  (compilando archivo de origen "src/Source/Scene.cpp")
   
   Generando código...

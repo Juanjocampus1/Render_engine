@@ -15,7 +15,6 @@ public:
     void Update();
     void Draw(const Camera& camera);
 };
-
 #endif // SCENE_H
 
 

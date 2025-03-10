@@ -12,7 +12,7 @@ void Scene::AddNode(Node* node) {
         root = node;
     }
     else {
-        root->AddChild(node);
+        root->InsertNode(root, node);
     }
 }
 
@@ -22,7 +22,7 @@ void Scene::RemoveNode(Node* node) {
         root = nullptr;
     }
     else {
-        root->RemoveChild(node);
+        root->RemoveNode(node);
     }
 }
 
@@ -37,5 +37,6 @@ void Scene::Draw(const Camera& camera) {
         root->Draw(camera);
     }
 }
+
 
 
