@@ -23,13 +23,11 @@ Mesh::Mesh(std::vector <Vertex>& vertices, std::vector <GLuint>& indices, std::v
     EBO.Unbind();
 }
 
-
 void Mesh::SetTransform(const glm::vec3& translation, const glm::quat& rotation, const glm::vec3& scale) {
     modelMatrix = glm::translate(glm::mat4(1.0f), translation) *
         glm::mat4_cast(rotation) *
         glm::scale(glm::mat4(1.0f), scale);
 }
-
 
 void Mesh::Draw(Shader& shader, const Camera& camera) {
     // Bind shader to be able to access uniforms

@@ -1,6 +1,8 @@
 #include "../Header_Files/UIManager.h"
 
-UIManager::UIManager(LightManager& lightManager, MeshManager& meshManager, Scene& scene) : lightManager(lightManager), meshManager(meshManager), scene(scene), selectedObjectId(-1) {}
+UIManager::UIManager(LightManager& lightManager, MeshManager& meshManager, Scene& scene)
+    : lightManager(lightManager), meshManager(meshManager), scene(scene), selectedObjectId(-1) {
+}
 
 void UIManager::Render(Camera& camera) {
     // Render the menu bar
@@ -21,7 +23,6 @@ void UIManager::Render(Camera& camera) {
 
     // Draw lights
     lightManager.DrawLights(camera);
-
 }
 
 void UIManager::RenderMenuBar() {
@@ -54,7 +55,7 @@ void UIManager::RenderHierarchy() {
     }
     for (const auto& mesh : meshManager.GetMeshes()) {
         ImGui::PushID(mesh.id);
-        if (ImGui::Selectable(("Cube " + std::to_string(mesh.id)).c_str(), selectedObjectId == mesh.id)) {
+        if (ImGui::Selectable(("Mesh " + std::to_string(mesh.id)).c_str(), selectedObjectId == mesh.id)) {
             selectedObjectId = mesh.id; // Actualizar el ID del objeto seleccionado
         }
         ImGui::PopID();
@@ -126,6 +127,18 @@ void UIManager::RenderAddMenu() {
         if (ImGui::BeginMenu("Meshes")) {
             if (ImGui::MenuItem("Add Cube")) {
                 meshManager.AddCube(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::quat(1.0f, 0.0f, 0.0f, 0.0f));
+            }
+            if (ImGui::MenuItem("Add Plane")) {
+                meshManager.AddPlane(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::quat(1.0f, 0.0f, 0.0f, 0.0f));
+            }
+            if (ImGui::MenuItem("Add Cylinder")) {
+                meshManager.AddCylinder(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::quat(1.0f, 0.0f, 0.0f, 0.0f));
+            }
+            if (ImGui::MenuItem("Add Pyramid")) {
+                meshManager.AddPyramid(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::quat(1.0f, 0.0f, 0.0f, 0.0f));
+            }
+            if (ImGui::MenuItem("Add Sphere")) {
+                meshManager.AddSphere(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::quat(1.0f, 0.0f, 0.0f, 0.0f));
             }
             ImGui::EndMenu();
         }
