@@ -19,21 +19,21 @@ struct MeshData {
 };
 
 class MeshManager {
-public:
-    MeshManager(Scene& scene);
-    void AddCube(const glm::vec3& position, const glm::vec3& scale, const glm::quat& rotation);
-    void AddPlane(const glm::vec3& position, const glm::vec3& scale, const glm::quat& rotation);
-    void AddCylinder(const glm::vec3& position, const glm::vec3& scale, const glm::quat& rotation);
-    void AddPyramid(const glm::vec3& position, const glm::vec3& scale, const glm::quat& rotation);
-    void AddSphere(const glm::vec3& position, const glm::vec3& scale, const glm::quat& rotation);
-    void RemoveMesh(int id);
-    void UpdateMesh(int id, const glm::vec3& position, const glm::vec3& scale, const glm::quat& rotation);
-    std::vector<MeshData>& GetMeshes();
-    MeshData* GetMesh(int id);
+    public:
+        MeshManager(Scene& scene);
+        void AddCube(const glm::vec3& position, const glm::vec3& scale, const glm::quat& rotation);
+        void AddPlane(const glm::vec3& position, const glm::vec3& scale, const glm::quat& rotation);
+        void AddCylinder(const glm::vec3& position, const glm::vec3& scale, const glm::quat& rotation);
+        void AddPyramid(const glm::vec3& position, const glm::vec3& scale, const glm::quat& rotation);
+        void AddSphere(const glm::vec3& position, const glm::vec3& scale, const glm::quat& rotation);
+        void RemoveMesh(int id);
+        void UpdateMesh(int id, const glm::vec3& position, const glm::vec3& scale, const glm::quat& rotation);
+        std::vector<MeshData>& GetMeshes();
+        MeshData* GetMesh(int id);
 
-private:
-    Scene& scene;
-    std::vector<MeshData> meshes;
+    private:
+        Scene& scene;
+        std::vector<MeshData> meshes;
 };
 
 #endif // MESHMANAGER_H

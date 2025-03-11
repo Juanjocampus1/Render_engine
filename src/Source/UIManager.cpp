@@ -20,9 +20,12 @@ void UIManager::Render(Camera& camera) {
 
     // Render the add menu
     RenderAddMenu();
+    RenderDeleteMenu();
 
     // Draw lights
     lightManager.DrawLights(camera);
+
+    
 }
 
 void UIManager::RenderMenuBar() {
@@ -63,50 +66,126 @@ void UIManager::RenderHierarchy() {
 }
 
 void UIManager::RenderProperties() {
-    ImGui::Text("Properties");
+    ImGui::Text("Transform");
+    static glm::vec3 position(0.0f);
+    static glm::vec3 scale(1.0f);
+    static glm::quat rotation(1.0f, 0.0f, 0.0f, 0.0f);
+
     if (selectedObjectId != -1) {
         Light* selectedLight = lightManager.GetLight(selectedObjectId);
         if (selectedLight) {
-            if (ImGui::ColorEdit4("Light Color", const_cast<float*>(glm::value_ptr(selectedLight->color)))) {
-                lightManager.UpdateLight(selectedObjectId, selectedLight->position, selectedLight->color, selectedLight->type);
-            }
-            if (ImGui::SliderFloat3("Light Position", const_cast<float*>(glm::value_ptr(selectedLight->position)), -1.0f, 1.0f)) {
-                lightManager.UpdateLightPosition(selectedObjectId, selectedLight->position);
-            }
-            const char* lightTypes[] = { "Point Light", "Directional Light", "Spot Light" };
-            int currentType = static_cast<int>(selectedLight->type);
-            if (ImGui::Combo("Light Type", &currentType, lightTypes, IM_ARRAYSIZE(lightTypes))) {
-                selectedLight->type = static_cast<LightType>(currentType);
-                lightManager.UpdateLight(selectedObjectId, selectedLight->position, selectedLight->color, selectedLight->type);
-            }
-            if (ImGui::Button("Remove Light")) {
-                lightManager.RemoveLight(selectedObjectId);
-                selectedObjectId = -1; // Deseleccionar el objeto
-            }
+            position = selectedLight->position;
+            scale = glm::vec3(1.0f); // Las luces no tienen escala
+            rotation = glm::quat(1.0f, 0.0f, 0.0f, 0.0f); // Las luces no tienen rotación
         }
         else {
             MeshData* selectedMesh = meshManager.GetMesh(selectedObjectId);
             if (selectedMesh) {
-                if (ImGui::SliderFloat3("Translation", glm::value_ptr(selectedMesh->position), -10.0f, 10.0f)) {
-                    meshManager.UpdateMesh(selectedObjectId, selectedMesh->position, selectedMesh->scale, selectedMesh->rotation);
-                }
-                glm::vec3 rotationEuler = glm::degrees(glm::eulerAngles(selectedMesh->rotation));
-                if (ImGui::SliderFloat3("Rotation", glm::value_ptr(rotationEuler), -180.0f, 180.0f)) {
-                    glm::quat rotQuat = glm::quat(glm::radians(rotationEuler));
-                    meshManager.UpdateMesh(selectedObjectId, selectedMesh->position, selectedMesh->scale, rotQuat);
-                }
-                if (ImGui::SliderFloat3("Scale", glm::value_ptr(selectedMesh->scale), 0.1f, 10.0f)) {
-                    meshManager.UpdateMesh(selectedObjectId, selectedMesh->position, selectedMesh->scale, selectedMesh->rotation);
-                }
-                if (ImGui::Button("Remove Mesh")) {
-                    meshManager.RemoveMesh(selectedObjectId);
-                    selectedObjectId = -1; // Deseleccionar el objeto
+                position = selectedMesh->position;
+                scale = selectedMesh->scale;
+                rotation = selectedMesh->rotation;
+            }
+        }
+    }
+
+    if (ImGui::SliderFloat3("Translation", glm::value_ptr(position), -10.0f, 10.0f)) {
+        if (selectedObjectId != -1) {
+            Light* selectedLight = lightManager.GetLight(selectedObjectId);
+            if (selectedLight) {
+                lightManager.UpdateLightPosition(selectedObjectId, position);
+            }
+            else {
+                MeshData* selectedMesh = meshManager.GetMesh(selectedObjectId);
+                if (selectedMesh) {
+                    meshManager.UpdateMesh(selectedObjectId, position, scale, rotation);
                 }
             }
         }
     }
-    else {
-        ImGui::Text("Select an object to see its properties.");
+
+    glm::vec3 rotationEuler = glm::degrees(glm::eulerAngles(rotation));
+    if (ImGui::SliderFloat3("Rotation", glm::value_ptr(rotationEuler), -180.0f, 180.0f)) {
+        rotation = glm::quat(glm::radians(rotationEuler));
+        if (selectedObjectId != -1) {
+            MeshData* selectedMesh = meshManager.GetMesh(selectedObjectId);
+            if (selectedMesh) {
+                meshManager.UpdateMesh(selectedObjectId, position, scale, rotation);
+            }
+        }
+    }
+
+    if (ImGui::SliderFloat3("Scale", glm::value_ptr(scale), 0.1f, 10.0f)) {
+        if (selectedObjectId != -1) {
+            MeshData* selectedMesh = meshManager.GetMesh(selectedObjectId);
+            if (selectedMesh) {
+                meshManager.UpdateMesh(selectedObjectId, position, scale, rotation);
+            }
+        }
+    }
+
+    ImGui::Separator();
+    ImGui::Text("Light Properties");
+    static glm::vec4 lightColor(1.0f);
+    static int lightType = 0;
+
+    if (selectedObjectId != -1) {
+        Light* selectedLight = lightManager.GetLight(selectedObjectId);
+        if (selectedLight) {
+            lightColor = selectedLight->color;
+            lightType = static_cast<int>(selectedLight->type);
+        }
+    }
+
+    if (ImGui::ColorEdit4("Light Color", glm::value_ptr(lightColor))) {
+        if (selectedObjectId != -1) {
+            Light* selectedLight = lightManager.GetLight(selectedObjectId);
+            if (selectedLight) {
+                lightManager.UpdateLight(selectedObjectId, selectedLight->position, lightColor, selectedLight->type);
+            }
+        }
+    }
+
+    const char* lightTypes[] = { "Point Light", "Directional Light", "Spot Light" };
+    if (ImGui::Combo("Light Type", &lightType, lightTypes, IM_ARRAYSIZE(lightTypes))) {
+        if (selectedObjectId != -1) {
+            Light* selectedLight = lightManager.GetLight(selectedObjectId);
+            if (selectedLight) {
+                selectedLight->type = static_cast<LightType>(lightType);
+                lightManager.UpdateLight(selectedObjectId, selectedLight->position, selectedLight->color, selectedLight->type);
+            }
+        }
+    }
+}
+
+void UIManager::RenderDeleteMenu() {
+    // Handle delete popup
+    if (ImGui::IsKeyPressed(ImGui::GetKeyIndex(ImGuiKey_X)) && selectedObjectId != -1) {
+        ImGui::OpenPopup("Delete Object");
+    }
+
+    if (ImGui::BeginPopupModal("Delete Object", NULL, ImGuiWindowFlags_AlwaysAutoResize)) {
+        ImGui::Text("Are you sure you want to delete the selected object?\nThis operation cannot be undone!\n\n");
+        ImGui::Separator();
+
+        if (ImGui::Button("Delete", ImVec2(120, 0))) {
+            Light* selectedLight = lightManager.GetLight(selectedObjectId);
+            if (selectedLight) {
+                lightManager.RemoveLight(selectedObjectId);
+            }
+            else {
+                MeshData* selectedMesh = meshManager.GetMesh(selectedObjectId);
+                if (selectedMesh) {
+                    meshManager.RemoveMesh(selectedObjectId);
+                }
+            }
+            selectedObjectId = -1; // Deseleccionar el objeto
+            ImGui::CloseCurrentPopup();
+        }
+        ImGui::SameLine();
+        if (ImGui::Button("Cancel", ImVec2(120, 0))) {
+            ImGui::CloseCurrentPopup();
+        }
+        ImGui::EndPopup();
     }
 }
 
