@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Source\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Header_Files\\Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Header_Files\\Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Source\\Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -13,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Header_Files\\UIManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Header_Files\\UIManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|solutionrelative:src\\Source\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5116604B-A6F4-45EB-B89E-A081DD49B77C}|lluanllax_engine.vcxproj|E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Header_Files\\MeshManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -38,8 +46,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 317,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Camera.h",
+              "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Header_Files\\Camera.h",
+              "RelativeDocumentMoniker": "src\\Header_Files\\Camera.h",
+              "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Header_Files\\Camera.h",
+              "RelativeToolTip": "src\\Header_Files\\Camera.h",
+              "ViewState": "AgIAAAUAAAAAAAAAAAApwBcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-11T16:25:47.565Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -51,6 +72,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Camera.cpp",
+              "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\Camera.cpp",
+              "RelativeDocumentMoniker": "src\\Source\\Camera.cpp",
+              "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\Camera.cpp",
+              "RelativeToolTip": "src\\Source\\Camera.cpp",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAC0AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-11T16:25:16.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "UIManager.h",
               "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Header_Files\\UIManager.h",
               "RelativeDocumentMoniker": "src\\Header_Files\\UIManager.h",
@@ -58,25 +92,24 @@
               "RelativeToolTip": "src\\Header_Files\\UIManager.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-10T23:33:16.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T23:33:16.983Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "UIManager.cpp",
               "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\UIManager.cpp",
               "RelativeDocumentMoniker": "src\\Source\\UIManager.cpp",
               "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\UIManager.cpp",
               "RelativeToolTip": "src\\Source\\UIManager.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ8AAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAAAJ8AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-10T13:02:18.049Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "MeshManager.h",
               "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Header_Files\\MeshManager.h",
               "RelativeDocumentMoniker": "src\\Header_Files\\MeshManager.h",
@@ -84,12 +117,11 @@
               "RelativeToolTip": "src\\Header_Files\\MeshManager.h",
               "ViewState": "AgIAAAUAAAAAAAAAAAAgwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-10T23:31:01.43Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T23:31:01.43Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "MeshManager.cpp",
               "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\MeshManager.cpp",
               "RelativeDocumentMoniker": "src\\Source\\MeshManager.cpp",
@@ -97,25 +129,24 @@
               "RelativeToolTip": "src\\Source\\MeshManager.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAOAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-10T12:39:33.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T12:39:33.22Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Main.cpp",
               "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Main.cpp",
               "RelativeDocumentMoniker": "src\\Main.cpp",
               "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Main.cpp",
               "RelativeToolTip": "src\\Main.cpp",
-              "ViewState": "AgIAADsAAAAAAAAAAAApwEwAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAApwFMAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-10T17:25:44.233Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "LightManager.cpp",
               "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\LightManager.cpp",
               "RelativeDocumentMoniker": "src\\Source\\LightManager.cpp",
@@ -127,13 +158,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Mesh.cpp",
               "DocumentMoniker": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\Mesh.cpp",
               "RelativeDocumentMoniker": "src\\Source\\Mesh.cpp",
               "ToolTip": "E:\\deberes\\2\u00BA DE DAM\\lluanllax_engine\\git_versions\\Render_engine\\src\\Source\\Mesh.cpp",
               "RelativeToolTip": "src\\Source\\Mesh.cpp",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-10T12:41:50.814Z",
               "EditorCaption": ""

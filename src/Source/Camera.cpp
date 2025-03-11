@@ -21,7 +21,7 @@ void Camera::UpdateMatrix(float FOVdeg, float nearPlane, float farPlane) {
     cameraMatrix = projection * view;
 }
 
-void Camera::Matrix(Shader& shader, const char* uniform) const{
+void Camera::Matrix(Shader& shader, const char* uniform) const {
     glUniformMatrix4fv(glGetUniformLocation(shader.ID, uniform), 1, GL_FALSE, glm::value_ptr(cameraMatrix));
 }
 
@@ -90,12 +90,18 @@ void Camera::Inputs(GLFWwindow* window) {
             lastMouseY = mouseY;
         }
         else { // Solo desplazar si Shift está presionado
-            float moveX = (speed * 7.0f) * (float)(mouseX - lastMouseX) / width; // Aumentada la velocidad
-            float moveY = (speed * 7.0f) * (float)(mouseY - lastMouseY) / height;
+            if (firstClick) {
+                lastMouseX = mouseX;
+                lastMouseY = mouseY;
+                firstClick = false;
+            }
+
+            float moveX = (float)(mouseX - lastMouseX) / width;
+            float moveY = (float)(mouseY - lastMouseY) / height;
 
             glm::vec3 right = glm::normalize(glm::cross(Orientation, Up));
-            Position -= right * moveX;
-            Position += Up * moveY;
+            Position -= right * moveX * speed * 100.0f; // Aumentada la velocidad
+            Position += Up * moveY * speed * 100.0f;
 
             lastMouseX = mouseX;
             lastMouseY = mouseY;

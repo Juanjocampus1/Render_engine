@@ -80,6 +80,9 @@ int main() {
     ImGui_ImplGlfw_InitForOpenGL(window, true);
     ImGui_ImplOpenGL3_Init("#version 330");
 
+    glfwSetScrollCallback(window, Camera::ScrollCallback);
+    glfwSetWindowUserPointer(window, &camera);
+
     // Main while loop
     while (!glfwWindowShouldClose(window)) {
         // Specify the color of the background
